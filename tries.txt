@@ -1,0 +1,78 @@
+from sklearn.cluster import KMeans
+
+def compute_vlad_vectors(features, k):
+    
+    if len(features) < k:
+        return np.mean(features, axis=0)
+    
+    kmeans = KMeans(n_clusters=k)    
+    kmeans.fit(features)
+    vlad_vector = np.empty([2 * 2048,])
+    
+    centroids = kmeans.cluster_centers_
+    labels = kmeans.labels_
+    
+    for k in range(2):
+        vk = np.zeros(2048)
+        for index, feature in enumerate(features):
+            if labels[index] == k:
+                vk += (feature - centroids[labels[index]])
+        
+        q = np.count_nonzero(labels == k)
+        if q != 0:
+            vk /= q
+        
+        vk = np.sqrt(np.abs(vk)) * np.sign(vk)
+        
+        norm = np.linalg.norm(vk)
+        if norm != 0:
+            vk /= norm
+        
+        np.concatenate((vlad_vector, vk), axis=0)
+    
+    vlad_vector = np.sqrt(np.abs(vlad_vector)) * np.sign(vlad_vector)
+    
+    global_norm = np.linalg.norm(vlad_vector)
+    if global_norm != 0:
+        return vlad_vector / global_norm
+    else:
+        return vlad_vector
+
+
+
+from sklearn.mixture import GaussianMixture
+
+def compute_fisher_vector(features, k):
+    gmm = GaussianMixture(n_components=k, covariance_type='diag', reg_covar=1e-4)
+    gmm.fit(features)
+    
+    N = features.shape[0]
+
+    # Compute posterior probabilities.
+    Q = gmm.predict_proba(features)  # NxK
+
+    # Compute the sufficient statistics of descriptors.
+    Q_sum = np.sum(Q, 0)[:, np.newaxis] / N
+    Q_xx = np.dot(Q.T, features) / N
+    Q_xx_2 = np.dot(Q.T, features ** 2) / N
+
+    # Compute derivatives with respect to mixing weights, means and variances.
+    d_pi = Q_sum.squeeze() - gmm.weights_
+    d_mu = Q_xx - Q_sum * gmm.means_
+    d_sigma = (
+        - Q_xx_2
+        - Q_sum * gmm.means_ ** 2
+        + Q_sum * gmm.covariances_
+        + 2 * Q_xx * gmm.means_)
+
+    # Merge derivatives into a vector.
+    fisher_vector = np.hstack((d_pi, d_mu.flatten(), d_sigma.flatten()))
+    
+    fisher_vector = np.sqrt(np.abs(fisher_vector)) * np.sign(fisher_vector)
+    
+    global_norm = np.linalg.norm(fisher_vector)
+    
+    if global_norm != 0:
+        return fisher_vector / global_norm
+    else:
+        return fisher_vector
