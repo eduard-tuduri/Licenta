@@ -1,0 +1,32 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage[utf8x]{inputenc}
+\usepackage[romanian]{babel}
+
+\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+\section{Introducere}
+Domeniul \textit{Computer Vision} a cunoscut un adevărat progres în jurul anului 2012 atunci cănd Alex Krizhevsky, Ilya Sutskever și Geoffrey Hinton au construit ceea ce s-a numit AlexNet. O rețea neuronală convulațională prin care au obținut o eroare de 15.3\% în cadrul competiției ImageNet LSVRC-2010 care constă în clasificarea a 1.2 milioane de imagini de rezoluție înaltă într-una din 1000 de clase. Acest rezultat a fost cu 10.8\% mai bun decăt precedentul, arătând că tehnicile de \textit{deep learning} au un potențial enorm în problema recunoșterii de imagini. La data scrierii acestei lucrări, eroarea în cadrul competiției este $\approx 2.9\%$.\\
+
+Prima rețea convulațională a fost creată în anul 1998 de către Yann LeCun, numindu-se LeNet-5. Scopul ei a fost clasificarea cifrelor scrise de mână fiind inspirată de anumite descoperiri din biologie care s-au referit la faptul că, în cortexul vizual, există neuroni care răspund individual la regiuni mici dintr-un stimul vizual, creierul neprocesând o imagine ca un tot unitar.\\
+
+În cadrul acestei lucrări vom studia folosința rețelelor neuronale convulaționale, a celor \textit{simple}, căt și a altor tehnici de învățare automată pentru a asigna independent unei instanțe, definită în problemă ca o mulțime de fotografii dintr-un reastaurant, fiecare dintre următoarele clase:\\
+
+\begin{enumerate}
+\item bun pentru prânz (good for lunch)
+\item bun pentru cină (good for dinner)
+\item acceptă rezervări (takes reservations)
+\item are sejur în aer liber (outdoor seating)
+\item este scump (restaurant is expensive)
+\item oferă alcool (has alcohol)
+\item are serviciu de masă (has table service)
+\item atmosfera este rustică (ambience is classy)
+\item bun pentru copii (good for kids)
+\end{enumerate}
+
+Această problemă a fost propusă în anul 2015 de cei de la Yelp prin platforma Kaggle. Motivația din spate a fost că răspunsurile pentru întrebările de mai sus reprezintă un factor important în sistemele lor de recomandări, însă utilizatorii nu oferă foarte des aceste răspunsuri. În acest caz, un model de învățare automată ar fi de folos 
+
+\end{document}
