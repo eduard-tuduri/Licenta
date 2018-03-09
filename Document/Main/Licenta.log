@@ -1,13 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.4)  8 MAR 2018 19:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.4)  9 MAR 2018 18:19
 entering extended mode
-**./Classification.tex
-(Classification.tex
+**./Licenta.tex
+(Licenta.tex
 LaTeX2e <2017-04-15>
 Babel <3.17> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Users\eduar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Users\eduar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size11.clo"
-File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+("C:\Users\eduar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -207,8 +207,9 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen121
 \Gin@req@width=\dimen122
-) (Classification.aux)
-\openout1 = `Classification.aux'.
+) (Licenta.aux (Introduction.aux) (Classification.aux)
+(Bibliography.aux))
+\openout1 = `Licenta.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
@@ -242,12 +243,12 @@ LaTeX Font Info:    ... okay on input line 11.
 * \topmargin=-37.0pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=11.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=59.0pt
+* \marginparwidth=44.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -333,85 +334,139 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-("C:\Users\eduar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-1.def"
-File: uni-1.def 2013/05/13 UCS: Unicode data U+0100..U+01FF
-)
-("C:\Users\eduar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
-File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
-)
+\openout2 = `Introduction.aux'.
+
+ (Introduction.tex
 ("C:\Users\eduar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-2.def"
 File: uni-2.def 2013/05/13 UCS: Unicode data U+0200..U+02FF
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 14.
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
 
 ("C:\Users\eduar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 14.
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 ("C:\Users\eduar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) ("C:\Users\eduar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 18.
-("C:\Users\eduar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+("C:\Users\eduar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-1.def"
+File: uni-1.def 2013/05/13 UCS: Unicode data U+0100..U+01FF
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
 
 [1
 
+
 {C:/Users/eduar/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-<restaurantInstance.png, id=18, 754.31813pt x 450.18187pt>
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 27.
+("C:\Users\eduar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
+
+[2]) [3]
+\openout2 = `Classification.aux'.
+
+ (Classification.tex [4
+
+
+]
+Overfull \hbox (3.89322pt too wide) in paragraph at lines 41--42
+\OT1/cmr/m/n/12 Pentru o instan[]a de-fi-nita la fel ca mai sus $\OML/cmm/m/i
+t/12 x \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 R[] \OML/cmm/m/it/12 p \OMS/cmsy/m/n/12
+ 2 []$ []\OT1/cmr/m/n/12 i o mul[]ime $\OML/cmm/m/it/12 C \OT1/cmr/m/n/12 = \OM
+S/cmsy/m/n/12 f\OML/cmm/m/it/12 C[]; C[]; :::; C[]\OMS/cmsy/m/n/12 g \OML/cmm/m
+/it/12 k \OMS/cmsy/m/n/12 2
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
+[5]
+<restaurantInstance.png, id=35, 754.31813pt x 450.18187pt>
 File: restaurantInstance.png Graphic file (type png)
 <use restaurantInstance.png>
-Package pdftex.def Info: restaurantInstance.png  used on input line 73.
+Package pdftex.def Info: restaurantInstance.png  used on input line 61.
 (pdftex.def)             Requested size: 226.29718pt x 135.0556pt.
 
-Overfull \hbox (7.01707pt too wide) in paragraph at lines 72--81
+Overfull \hbox (26.78535pt too wide) in paragraph at lines 60--69
 [][] 
  []
 
-[2] [3 <./restaurantInstance.png>] (Classification.aux) ) 
+) [6 <./restaurantInstance.png>]
+\openout2 = `Bibliography.aux'.
+
+ (Bibliography.tex) [7
+
+
+] (Licenta.aux
+(Introduction.aux) (Classification.aux) (Bibliography.aux)) ) 
 Here is how much of TeX's memory you used:
- 5039 strings out of 493303
- 67321 string characters out of 3129785
- 136110 words of memory out of 3000000
- 8500 multiletter control sequences out of 15000+200000
- 19336 words of font info for 75 fonts, out of 3000000 for 9000
+ 5066 strings out of 493303
+ 68085 string characters out of 3129785
+ 136889 words of memory out of 3000000
+ 8504 multiletter control sequences out of 15000+200000
+ 18315 words of font info for 71 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,34p,591b,529s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/eduar/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users
-/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx6.p
-fb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmex10.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmmi10.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/eduar/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/eduar/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/edu
-ar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr12.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr6.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmr8.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/eduar/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/eduar/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/User
-s/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.
-pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/symbols/msbm10.pfb>
-Output written on Classification.pdf (3 pages, 952365 bytes).
+ 41i,12n,33p,1297b,478s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/eduar/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/U
+sers/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
+x7.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmbxti10.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmex10.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/eduar/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/eduar/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Use
+rs/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10
+.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr12.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr17.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/eduar/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/eduar/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/eduar/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Us
+ers/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmsy8.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmti12.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Users/eduar/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/eduar/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Licenta.pdf (7 pages, 1007291 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
+ 109 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,13 @@
+\begin{thebibliography}{1}
+
+\bibitem{alexnet} Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton {\em ImageNet Classification with Deep Convolutional Neural Networks}  2012.
+
+\bibitem{lenet} Yann LeChun, Leon Bottou, Yoshua Bengio, Patrick Haffner {\em Gradient-Based Learning Applied to Document Recognition} 1998.
+
+\bibitem{multiInstance} Jaume Amores {\em Multiple Instance Classification: review, taxonomy and
+comparative study} \\
+Computer Vision Center, Computer Science Department, UAB, Spain 2013.
+
+\bibitem{competition} \texttt{https://www.kaggle.com/c/yelp-restaurant-photo-classification}
+
+\end{thebibliography}
