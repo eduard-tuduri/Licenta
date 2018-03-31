@@ -49,7 +49,7 @@ y_i=
 \quad i=\overline{1,k}
 \]
 
-Apare des o confuzie între clasificarea cu etichete multiple și cea cu clase multiple. Diferența fundamentală este ca în prima o instanță poate să aparțină mai multor clase, spre deosebire de cealaltă, în care o instanță este asignată unei singure clase. Totodată, clasificarea binară este un caz particular a clasificării cu etichete multiple atunci când $k=1$. Detectarea obiectelor face parte din acest tip de clasificare, unde, pentru o imagine, vom marca prezența mai multor obiecte (clase) și nu a unui singur element.
+Apare des o confuzie între clasificarea cu etichete multiple și cea cu clase multiple. Diferența fundamentală este că în prima o instanță poate să aparțină mai multor clase, spre deosebire de cealaltă, în care o instanță este asignată unei singure clase. Totodată, clasificarea binară este un caz particular a clasificării cu etichete multiple atunci când $k=1$. Detectarea obiectelor face parte din acest tip de clasificare, unde, pentru o imagine, vom marca prezența mai multor obiecte (clase) și nu a unui singur element.
 
 \subsection{Învățare multi-instanță}
 În acest caz, o instanță nu mai este reprezentată de un singur vector de numere reale, ci de o mulțime de astfel de vectori. Fie $X=\{x_1, x_2,...,x_k\} \; k\in\mathbb{N^*} \; x_i\in\mathbb{R}^{p_i} \; p_i\in\mathbb{N^*}$ o instanță. O ipoteză $h$ determinată de un algoritm de învățare automată va clasifica întreaga mulțime $X$ și nu fiecare componentă $x_i$ independent.   \cite{multiInstance}\\
