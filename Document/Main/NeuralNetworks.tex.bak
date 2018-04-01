@@ -242,10 +242,10 @@ Fie $x=[x_1,x_2,x_3], \; w=[w_1,w_2,w_3] \quad x,w \in \mathbb{R}^3$ și $b \in 
 Se onservă că dacă înlocuim $f$ cu funcția sigmoid $\displaystyle{\sigma(z)=\frac{1}{1 + e^{-z}}}$ obținem fix modelul regresiei logistice, el putând fi interpretat ca o rețea neuronală cu un singur neuron.
 
 \subsubsection{Funcții de activare}
-Am văzut cât este de simplu să obținem regresia logistică dacă înlocuim funcția de activare cu funcția sigmoid, însă există și alte opțiuni consacrate pe langa aceasta.
+Am văzut cât este de simplu să obținem regresia logistică dacă înlocuim funcția de activare cu funcția sigmoid, însă există și alte opțiuni consacrate pe lângă aceasta.
 
 \begin{enumerate}
-\item Funcția tangentă hiperbolică (Hyperbolic tangent): $\displaystyle{tanh(z)=\frac{e^x-e^{-x}}{e^x + e^{-x}}}$
+\item \textbf{Funcția tangentă hiperbolică (Hyperbolic tangent)}: $\displaystyle{tanh(z)=\frac{e^x-e^{-x}}{e^x + e^{-x}}}$
 
 \begin{center}
 \begin{tikzpicture}
@@ -271,7 +271,7 @@ Am văzut cât este de simplu să obținem regresia logistică dacă înlocuim f
 \end{tikzpicture}
 \end{center}
 
-\item Rectified Linear Unit (ReLU): $relu(z)=max(z, 0)$
+\item \textbf{Rectified Linear Unit (ReLU)}: $relu(z)=max(z, 0)$
 
 \begin{center}
 \begin{tikzpicture}
@@ -297,7 +297,7 @@ Am văzut cât este de simplu să obținem regresia logistică dacă înlocuim f
 \end{tikzpicture}
 \end{center}
 
-\item Leaky ReLU: $leakyReLU(z)=max(z, 0.01z)$
+\item \textbf{Leaky ReLU}: $leakyReLU(z)=max(z, 0.01z)$
 
 \begin{center}
 \begin{tikzpicture}
@@ -348,6 +348,7 @@ x_3 \\
 \]
  
 \item $a_t^{[l]} \rightarrow$ Activarea neuronului \textit{t} din layer-ul \textit{l}.
+\item $A^{[l]} \rightarrow$ Vector ce conține activările tuturor neuronilor din layer-ul \textit{l}.
 \item $W^{[1]} \in M_{4,3}(\mathbb{R}) \rightarrow$ Matrice ce conține parametrii \textit{w} pentru fiecare neuron din primul layer pe câte o linie. \\
 
 \[
@@ -377,15 +378,71 @@ W^{[2]}=
 Astfel operațiile ce se produc în propagarea $input-output$ sunt:
 
 \begin{enumerate}
-\item $a^{[0]} = x$ consider
-\item $z^{[1]} = W^{[1]}a^{[0]} + b^{[1]}$
-\item $a^{[1]} = f(z^{[1]})$
-\item $z^{[2]} = W^{[2]}a^{[1]} + b^{[2]}$
-\item $a^{[2]} = f(z^{[2]})$
+\item $A^{[0]} = x \;$ considerăm $x$ valorile de activare a layer-ului de $input$.
+\item $Z^{[1]} = W^{[1]}a^{[0]} + b^{[1]}$
+\item $A^{[1]} = f(z^{[1]})$
+\item $Z^{[2]} = W^{[2]}a^{[1]} + b^{[2]}$
+\item $A^{[2]} = f(z^{[2]})$
+\item $\pred=A^{[2]}$
 \end{enumerate}
 
-$a^{[2]}$ reprezintă valoarea finală, fiind activarea layer-ului de $output$, iar $f$ este o funcție oarecare de activare.
+$A^{[2]}$ reprezintă valoarea finală, fiind activarea layer-ului de $output$, iar $f$ este o funcție oarecare de activare.
 
 \subsubsection{Funcția de cost}
+Am văzut cum regresia logistică este o rețea neuronală foarte simplă. Datorită acestui fapt, funcția de cost folosită atunci, în cadrul clasificării binare, poate fi utilizată pentru a antrena și rețele neuronale complexe.
+$$L(\pred, y)=-(ylog(\pred) + (1-y)log(1 - \pred))$$
+$$\displaystyle{J(W,b)=\frac{1}{m}\sum\limits_{i=1}^{m}L(\pred^{(i)}, y^{(i)})}$$ 
+
 \subsubsection{Propagarea înapoi (Backpropagation)}
-\subsubsection{Erori la validare și la testare}
+O problemă complicată în antrenarea rețelelor neuronale este propagarea erorii ce este produsă de activarea ultimului layer, cel de $output$, către neuronii aflați la începutul rețelei. Am prezentat modul în care informația parcurge traseul $input-output$, însă, pentru optimizarea parametrilor, trebuie sa parcurgem traseul opus, $output-input$, inversând toate operațiile făcute. Pentru aceasta, vom prezenta algoritmul \textit{Backpropagation}. Fie aceeași rețea neuronală ca la \textit{Feed-Foward Propagation} și folosind aceleași notații:
+
+\begin{center}
+\includegraphics[scale=1]{feedFoward}
+\end{center}
+
+Operațiile efectuate de către \textit{Backpropagation} sunt:
+
+\begin{enumerate}
+\item $A^{[2]}=\pred$
+\item $dZ^{[2]}=A^{[2]}-Y$
+\item $\displaystyle{dW^{[2]} = \frac{1}{m}dZ^{[2]}{A^{[2]}}^T}$
+\item $\displaystyle{db^{[2]} = \frac{1}{m}} np.sum(dZ^{[2]}, axis=1, keepdims=True)$ \footnote{comandă \textit{numpy} ce face suma compenentelor pentru fiecare linie (pentru un input de forma $[n,m]$ vom obține un output de forma $[n,1]$)}
+\item $dZ^{[1]}={W^{[2]}}^TdZ^{[2]} * f'(Z^{[1]})$
+\item $\displaystyle{dW^{[1]} = \frac{1}{m} dZ^{[1]}X^T}$
+\item $\displaystyle{db^{[1]} = \frac{1}{m}} np.sum(dZ^{[1]}, axis=1, keepdims=True)$
+\end{enumerate}
+
+După execuția acestui algoritm, avem calculați 4 vector $\{dW^{[2]},db^{[2]},dW^{[1]},db^{[1]}\}$ pe care îi vom folosi pentru a modifica parametrii $W,b$ a fiecărui layer, folosind unul din algoritmii de optimizare bazați pe gradient prezentați anterior.
+
+\subsubsection{Regularizare $L_2$ și Dropout}
+În învățarea automată, o problemă frecventă este super-specializarea (overfitting) și, din păcate, aceasta este foarte întâlnită și în deep learning.
+
+\begin{center}
+\includegraphics[scale=0.7]{fittings}
+\end{center}
+
+Pentru a ameliora acest efect nedorit, vom folosi ceea ce se numește $regularizare$, cele mai folosite 2 forme fiind:
+
+\begin{enumerate}
+\item \textbf{Regularizare $L_2$}: \\
+Vom aduce o mică modificare funcției de cost inițiale:
+$$\displaystyle{J(W^{[l]},b^{[l]})=\frac{1}{m}\sum\limits_{i=1}^{m}L(\pred^{(i)}, y^{(i)}) + \frac{\lambda}{2m}\sum\limits_{l=1}^{L}{\Vert W^{[l]} \Vert}_{F}^{2}}$$
+
+$\lambda \rightarrow$ termen de regularizare \\
+$L \rightarrow$ Numărul de layere din rețea 
+
+Pentru a minimiza această funcție $J$ modificată, trebuie ca $W^{[l]} \approx 0$. Astfel, o parte din neuroni au activări mici, creându-se un model mai simplu, ce nu descrie perfect datele de antrenament, dar care are o capacitate de generalizare mai mare.
+
+\item \textbf{Dropout}: \\
+Vom fixa un hyper-parametru $keep\_prob \in [0,1]$. În fiecare iterație din procesul de antrenare, vom asocia aleatoriu fiecărui neuron o valoare în intervalul $[0,1]$. Dacă acestă valoare depășește $keep\_prob$, nu vom lua în calcul neuronul respectiv în iterația curentă, setându-i temporar activarea pe 0.
+
+\begin{center}
+\includegraphics[scale=0.3]{dropout}
+\end{center}
+
+Efectul acestei metode este de asemenea un model mai simplu care are capacitatea de generalizare mai mare decât a celui care descrie perfect datele de antrenament.
+
+\end{enumerate}
+
+
+
