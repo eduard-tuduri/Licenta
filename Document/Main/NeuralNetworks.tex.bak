@@ -3,7 +3,7 @@
 \section{Rețele neuronale}
 
 \subsection{Regresie logistică}
-În cadrul acestui model vom calcula, pentru un anumit $x \in \mathbb{R}^{n_x}$, probabilitatea $P(y=1|x)$. Parametrii modelului sunt un vector $w \in \mathbb{R}^{n_x}$ și un număr real $b \in \mathbb{R}$. Astfel, regresia logistică se definește ca $\pred=\sigma(w^Tx + b)$, în care funcția $\sigma$ are următoarea expresie: $\displaystyle{\sigma(z)=\frac{1}{1 + e^{-z}}}$. Această funcție se numeste funcția logistică sau funcția sigmoid și are următorul grafic:
+În cadrul acestui model vom calcula, pentru un anumit $x \in \mathbb{R}^{n_x}$, probabilitatea $P(y=1 \vert x)$. Parametrii modelului sunt un vector $w \in \mathbb{R}^{n_x}$ și un număr real $b \in \mathbb{R}$. Astfel, regresia logistică se definește ca $\pred=\sigma(w^Tx + b)$, în care funcția $\sigma$ are următoarea expresie: $\displaystyle{\sigma(z)=\frac{1}{1 + e^{-z}}}$. Această funcție se numește funcția logistică sau funcția sigmoid și are următorul grafic:
 
 \begin{center}
 \begin{tikzpicture}
@@ -136,11 +136,11 @@ $s_{db} = 0$
 \end{algorithmic}
 \end{algorithm}
 
-RMSProp își propune să micșoreze oscilațiile în direcții divergente de locația minimului, făcute de Gradient Descent prin modificarea cu valori foarte mici a parametrilor ce duc spre direcții neoptime.
+RMSProp își propune să micșoreze oscilațiile în direcții divergente de locația minimului, făcute de Gradient Descent, prin modificarea cu valori foarte mici a parametrilor ce duc spre direcții neoptime. \cite{rmsprop}
 
 \subsubsection{Adam}
 
-Adam combină Momentum și RMSProp într-un singur algoritm oferind, în majoritatea cazurilor, un rezultat mai bun decât cele 2.
+Adam combină Momentum și RMSProp într-un singur algoritm oferind, în majoritatea cazurilor, un rezultat mai bun decât cele 2. \cite{adam}
 
 \begin{algorithm}
 \caption{Adam}
@@ -239,7 +239,7 @@ Fie $x=[x_1,x_2,x_3], \; w=[w_1,w_2,w_3] \quad x,w \in \mathbb{R}^3$ și $b \in 
 \end{enumerate}
 
 În care vectorul \textit{w} și numărul \textit{b} sunt parametrii, \textit{x} este un vector input și \textit{y} se numește valoarea activării neuronului, \textit{f} fiind funcția de activare. \\
-Se onservă că dacă înlocuim $f$ cu funcția sigmoid $\displaystyle{\sigma(z)=\frac{1}{1 + e^{-z}}}$ obținem fix modelul regresiei logistice, el putând fi interpretat ca o rețea neuronală cu un singur neuron.
+Se observă că dacă înlocuim $f$ cu funcția sigmoid $\displaystyle{\sigma(z)=\frac{1}{1 + e^{-z}}}$ obținem fix modelul regresiei logistice, el putând fi interpretat ca o rețea neuronală cu un singur neuron.
 
 \subsubsection{Funcții de activare}
 Am văzut cât este de simplu să obținem regresia logistică dacă înlocuim funcția de activare cu funcția sigmoid, însă există și alte opțiuni consacrate pe lângă aceasta.
@@ -386,7 +386,7 @@ Astfel operațiile ce se produc în propagarea $input-output$ sunt:
 \item $\pred=A^{[2]}$
 \end{enumerate}
 
-$A^{[2]}$ reprezintă valoarea finală, fiind activarea layer-ului de $output$, iar $f$ este o funcție oarecare de activare.
+$A^{[2]}$ reprezintă valoarea finală, fiind activarea layer-ului de $output$, iar $f$ este o funcție oarecare de activare. \cite{deeplearningAI}
 
 \subsubsection{Funcția de cost}
 Am văzut cum regresia logistică este o rețea neuronală foarte simplă. Datorită acestui fapt, funcția de cost folosită atunci, în cadrul clasificării binare, poate fi utilizată pentru a antrena și rețele neuronale complexe.
@@ -412,7 +412,7 @@ Operațiile efectuate de către \textit{Backpropagation} sunt:
 \item $\displaystyle{db^{[1]} = \frac{1}{m}} np.sum(dZ^{[1]}, axis=1, keepdims=True)$
 \end{enumerate}
 
-După execuția acestui algoritm, avem calculați 4 vector $\{dW^{[2]},db^{[2]},dW^{[1]},db^{[1]}\}$ pe care îi vom folosi pentru a modifica parametrii $W,b$ a fiecărui layer, folosind unul din algoritmii de optimizare bazați pe gradient prezentați anterior.
+După execuția acestui algoritm, avem calculați 4 vector $\{dW^{[2]},db^{[2]},dW^{[1]},db^{[1]}\}$ pe care îi vom folosi pentru a modifica parametrii $W,b$ a fiecărui layer, folosind unul din algoritmii de optimizare bazați pe gradient prezentați anterior. \cite{deeplearningAI}
 
 \subsubsection{Regularizare $L_2$ și Dropout}
 În învățarea automată, o problemă frecventă este super-specializarea (overfitting) și, din păcate, aceasta este foarte întâlnită și în deep learning.
