@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.4)  3 APR 2018 20:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.4)  20 MAY 2018 19:13
 entering extended mode
 **./Licenta.tex
 (Licenta.tex
@@ -693,7 +693,7 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (Licenta.aux (Introduction.aux) (Classification.aux) (NeuralNetworks.aux)
-(Bibliography.aux))
+(FeatureExtraction.aux) (Bibliography.aux))
 \openout1 = `Licenta.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -988,53 +988,106 @@ File: dropout.png Graphic file (type png)
 Package pdftex.def Info: dropout.png  used on input line 440.
 (pdftex.def)             Requested size: 314.37692pt x 156.5862pt.
 ) [19 <./dropout.png (PNG copy)>]
+\openout2 = `FeatureExtraction.aux'.
+
+ (FeatureExtraction.tex
+Overfull \hbox (0.14038pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/12 Fie 2 ma-trici, $\OML/cmm/m/it/12 I$ \OT1/cmr/m/n/12 ma-tri-cea
+ de pi-xeli co-res-punzatoare unei ima-gini []i $\OML/cmm/m/it/12 K$ \OT1/cmr/
+m/n/12 o ma-trice $\OML/cmm/m/it/12 kernel\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 fil
+ter\OT1/cmr/m/n/12 )$.
+ []
+
+<convolution.png, id=103, 236.52pt x 111.252pt>
+File: convolution.png Graphic file (type png)
+<use convolution.png>
+Package pdftex.def Info: convolution.png  used on input line 9.
+(pdftex.def)             Requested size: 354.77911pt x 166.87758pt.
+<padding.png, id=104, 620.3175pt x 321.2pt>
+File: padding.png Graphic file (type png)
+<use padding.png>
+Package pdftex.def Info: padding.png  used on input line 18.
+(pdftex.def)             Requested size: 434.2193pt x 224.83847pt.
+[20
+
+
+ <./convolution.png>]
+<stride.png, id=109, 472.01344pt x 185.94469pt>
+File: stride.png Graphic file (type png)
+<use stride.png>
+Package pdftex.def Info: stride.png  used on input line 26.
+(pdftex.def)             Requested size: 472.01228pt x 185.94421pt.
+
+Overfull \hbox (2.25726pt too wide) in paragraph at lines 26--26
+ [] 
+ []
+
+
+Overfull \hbox (31.61371pt too wide) in paragraph at lines 30--31
+\OT1/cmr/m/n/12 dere de informa[]ie. Ast-fel output-ul ob[]inut va avea forma $
+[]$. 
+ []
+
+[21 <./padding.png> <./stride.png>]
+<convVolumes.png, id=114, 695.59875pt x 282.05376pt>
+File: convVolumes.png Graphic file (type png)
+<use convVolumes.png>
+Package pdftex.def Info: convVolumes.png  used on input line 37.
+(pdftex.def)             Requested size: 278.23457pt x 112.81949pt.
+<convLayer.png, id=115, 982.67125pt x 470.75874pt>
+File: convLayer.png Graphic file (type png)
+<use convLayer.png>
+Package pdftex.def Info: convLayer.png  used on input line 43.
+(pdftex.def)             Requested size: 393.06154pt x 188.30016pt.
+ [22 <./convVolumes.png> <./convLayer.png>]) [23]
 \openout2 = `Bibliography.aux'.
 
- (Bibliography.tex [20
+ (Bibliography.tex [24
 
 
-]) [21] (Licenta.aux (Introduction.aux)
-(Classification.aux) (NeuralNetworks.aux) (Bibliography.aux)) ) 
+]) [25] (Licenta.aux (Introduction.aux)
+(Classification.aux) (NeuralNetworks.aux) (FeatureExtraction.aux)
+(Bibliography.aux)) ) 
 Here is how much of TeX's memory you used:
- 25937 strings out of 493303
- 638470 string characters out of 3129785
- 824254 words of memory out of 3000000
- 28992 multiletter control sequences out of 15000+200000
+ 25970 strings out of 493303
+ 639210 string characters out of 3129785
+ 824665 words of memory out of 3000000
+ 29013 multiletter control sequences out of 15000+200000
  19940 words of font info for 76 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,12n,102p,1308b,1921s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/eduar/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:
-/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mbx12.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmbx6.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmbx7.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/eduar/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/eduar/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
-Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-mi12.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmmi6.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmmi8.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/eduar/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/eduar/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/
-eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb
-><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr6.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr7.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmr8.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/eduar/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/eduar/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Use
-rs/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti1
-2.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmti7.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmtt12.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Licenta.pdf (21 pages, 1794639 bytes).
+<C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmbx10.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/eduar/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:/Users/eduar/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/User
+s/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti
+10.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmex10.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmmi10.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/eduar/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/eduar/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users
+/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.p
+fb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmr12.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr17.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/eduar/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/eduar/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/eduar/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/User
+s/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmsy8.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmti10.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/eduar/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Users/eduar/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/e
+duar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm
+10.pfb>
+Output written on Licenta.pdf (25 pages, 1995696 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
+ 206 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 83 words of extra memory for PDF output out of 10000 (max. 10000000)
 

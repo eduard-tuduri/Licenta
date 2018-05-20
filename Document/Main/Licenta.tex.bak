@@ -16,6 +16,7 @@
 \include{Introduction}
 \include{Classification}
 \include{NeuralNetworks}
+\include{FeatureExtraction}
 
 \include{Bibliography}
 \end{document}

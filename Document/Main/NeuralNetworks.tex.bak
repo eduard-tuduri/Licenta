@@ -440,7 +440,7 @@ Vom fixa un hyper-parametru $keep\_prob \in [0,1]$. În fiecare iterație din pr
 \includegraphics[scale=0.3]{dropout}
 \end{center}
 
-Efectul acestei metode este de asemenea un model mai simplu care are capacitatea de generalizare mai mare decât a celui care descrie perfect datele de antrenament.
+Efectul acestei metode este de asemenea un model mai simplu care are capacitatea de generalizare mai mare decât a celui ce descrie perfect datele de antrenament.
 
 \end{enumerate}
 
