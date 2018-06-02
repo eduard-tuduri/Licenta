@@ -8,15 +8,19 @@
 \usepackage{pgfplots}
 \usepackage{algorithm}
 \usepackage{tikz}
+\usepackage{color}
 \usepackage[noend]{algpseudocode}
 \pgfplotsset{compat=1.8}
 \renewcommand{\baselinestretch}{1.5}
 
 \begin{document}
+\tableofcontents
+
 \include{Introduction}
 \include{Classification}
 \include{NeuralNetworks}
 \include{FeatureExtraction}
+\include{Implementation}
 
 \include{Bibliography}
 \end{document}
