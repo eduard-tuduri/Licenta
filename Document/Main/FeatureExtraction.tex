@@ -31,7 +31,7 @@ Scopul acestei tehnici este să reducă numărul de operații având ca compromi
 
 \subsubsection{Convoluție peste volume}
 
-Deocamdată, am vorbit despre operația de convoluție pe matrici de pixeli de forma $(n,m)$ ce reprezintă imagini $greyscale$. în contextul imaginilor RGB, matricile lor au forma $(n,m,3)$, iar pentru a putea efectua operația, vom copia filter-ul de 3 ori, formând o matrice de forma $(f,f,3)$. Pentru fiecare channel, vom lua filter-ul si vom face calculele ca înainte, obtinând 3 numere pentru fiecare poziție din output. La final vom aduna aceste 3 numere pentru a calcula o componentă a output-ului, forma acestuia rămânând aceeași ca în cazul imaginilor cu un singur channel.
+Deocamdată, am vorbit despre operația de convoluție pe matrici de pixeli de forma $(n,m)$ ce reprezintă imagini $greyscale$. În contextul imaginilor RGB, matricile lor au forma $(n,m,3)$, iar pentru a putea efectua operația, vom copia filter-ul de 3 ori, formând o matrice de forma $(f,f,3)$. Pentru fiecare channel, vom lua filter-ul si vom face calculele ca înainte, obtinând 3 numere pentru fiecare poziție din output. La final vom aduna aceste 3 numere pentru a calcula o componentă a output-ului, forma acestuia rămânând aceeași ca în cazul imaginilor cu un singur channel.
 
 \begin{center}
 \includegraphics[scale=0.4]{convVolumes} \\
@@ -115,7 +115,7 @@ O secventă în cascadă de Inception Blocks reprezintă o rețea convoluțional
 \includegraphics[scale=0.7]{inception}
 \end{center}
 
-Diferite modificări au fost aduse acestui model, cel din 2014 putând numele de Inception-V1, iar acum existând și Inception-V4.
+Diferite modificări au fost aduse acestui model, cel din 2014 purtând numele de Inception-V1, iar acum existând și Inception-V4.
 
 \subsubsection{Xception}
 Francois Chollet aduce îmbunătățiri în anul 2016 modelului ResNet, construind o rețea cu conecțiuni reziduale, dar în care înlocuiește toate operațiile de convoluție clasice din layere, cu operații numite \textit{Deapthwise Separable Convolution}. \cite{xception}
@@ -132,4 +132,4 @@ Deapthwise Separable Convolution împarte operația clasică în două. De exemp
 \end{center}
 
 \subsection{Transfer Learning}
-Transfer learning se referă la faptul că nu tot ce a învățăt o rețea neuronală pentru o anumită problemă devine inutil când vrem să-i dăm aceleași rețele o nouă problemă. Neavând resurse coputaționale foarte mari, acestă tehnică este o componentă esențială în cadrul proiectului meu. Astfel, folosind un model deja antrenat (Xception) pe datele din competiția ImageNet LSVRC-2010, am extras vectori caracteristici pentru fiecare imagine din setul meu de date, nemaiantrenând modelul. Am avut succes deoarece imaginile din cadrul ImageNet, majoritatea fiind obiecte obișnuite din jurul nostru, nu diferă foarte mult de ceea ce se găsește într-o fotografie făcută într-un restaurant. Ar fi fost imposibil pentru mine să o iau de la 0, ținând cont că modelele descrise anterior au fost antrenate în cloud, chiar și timp de câteva săptămâni fără oprire.
+Transfer learning se referă la faptul că nu tot ce a învățăt o rețea neuronală pentru o anumită problemă devine inutil când vrem să-i dăm aceleași rețele o nouă problemă. Neavând resurse computaționale foarte mari, această tehnică este o componentă esențială în cadrul proiectului meu. Astfel, folosind un model deja antrenat (Xception) pe datele din competiția ImageNet LSVRC-2010, am extras vectori caracteristici pentru fiecare imagine din setul meu de date, nemaiantrenând modelul. Am avut succes deoarece imaginile din cadrul ImageNet, majoritatea fiind obiecte obișnuite din jurul nostru, nu diferă foarte mult de ceea ce se găsește într-o fotografie făcută într-un restaurant. Ar fi fost imposibil pentru mine să o iau de la 0, ținând cont că modelele descrise anterior au fost antrenate în cloud, chiar și timp de câteva săptămâni fără oprire.
