@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.4)  3 JUN 2018 20:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.4)  17 JUN 2018 18:47
 entering extended mode
 **./Licenta.tex
 (Licenta.tex
@@ -870,17 +870,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
  []
 
 [1]
-Underfull \hbox (badness 10000) in paragraph at lines 82--85
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--90
+Underfull \hbox (badness 10000) in paragraph at lines 85--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
@@ -1223,15 +1223,34 @@ File: networkArhitecture.png Graphic file (type png)
 <use networkArhitecture.png>
 Package pdftex.def Info: networkArhitecture.png  used on input line 86.
 (pdftex.def)             Requested size: 286.82085pt x 217.56227pt.
- [41 <./networkArhitecture.png>]) [42]
+ [41 <./networkArhitecture.png>] [42]
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+
+ []
+
+) [43]
 \openout2 = `Bibliography.aux'.
 
+ (Bibliography.tex [44
 
-(Bibliography.tex [43
 
-
-]) [44] (Licenta.aux (Title.aux) (Introduction.aux)
-(Classification.aux) (NeuralNetworks.aux) (FeatureExtraction.aux)
+]) [45] (Licenta.aux (Title.aux) (Introduction.aux) (Classification.aux) (Neura
+lNetworks.aux) (FeatureExtraction.aux)
 (Implementation.aux) (Bibliography.aux)) ) 
 Here is how much of TeX's memory you used:
  26357 strings out of 493303
@@ -1270,9 +1289,9 @@ l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/eduar
 /Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mtt12.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
 amsfonts/symbols/msbm10.pfb>
-Output written on Licenta.pdf (46 pages, 5492542 bytes).
+Output written on Licenta.pdf (47 pages, 5495041 bytes).
 PDF statistics:
- 309 PDF objects out of 1000 (max. 8388607)
+ 312 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  193 words of extra memory for PDF output out of 10000 (max. 10000000)
 

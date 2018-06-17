@@ -44,10 +44,10 @@ Vom reaminti structura setului de date pus la dispoziție.
 \end{center}
 
 \subsubsection{Prelucrare date}
-În acestă etapa am eliminat inconsistențele din date (fotografii ce nu aveau niciun restaurant asociat sau restaurante ce nu aveau fotografii) și am adus toate imaginile la rezoluția 299x299 ce corespunde marimii input-ului pentru modelul Xception pe care l-am folosit pentru extragerea de caracteristici.
+În această etapă am eliminat inconsistențele din date (fotografii ce nu aveau niciun restaurant asociat sau restaurante ce nu aveau fotografii) și am adus toate imaginile la rezoluția 299x299 ce corespunde marimii input-ului pentru modelul Xception pe care l-am folosit pentru extragerea de caracteristici.
 
 \subsubsection{Extragerea de caracteristici}
-Pentru fiecare imagine de mărime 299x299 introdusă în modelul Xception, obținem un vector caracteristic cu 2048 de componente dacă extragem datele prelucrate de model la penultimul layer, înaintea celui de clasificare. Asrfel, fiecare imagine din setul de antrenament va fi reprezentată de către un vector din $\mathbb{R}^{2048}$. Scopul nostru însă, este să clasificăm restaurantele, nu fiecare poză în parte, așa că, pentru fiecare restaurant, vom combina vectorii caracteristici a fiecărei fotografii din acesta, recurgând la calcularea medii aritmetice pentru acești vectori. După executarea acestui pas, setul nostru de date va avea forma $(1996,2048)$, având pentru fiecare restaurant câte un vector de 2048 de componente și folosind PCA (Principal Component Analysis) putem vizualiza acești vectori (\textcolor{yellow}{GALBEN} - clasa este prezentă, \textcolor{purple}{MOV} - clasa este absentă).
+Pentru fiecare imagine de mărime 299x299 introdusă în modelul Xception, obținem un vector caracteristic cu 2048 de componente dacă extragem datele prelucrate de model la penultimul layer, înaintea celui de clasificare. Astfel, fiecare imagine din setul de antrenament va fi reprezentată de către un vector din $\mathbb{R}^{2048}$. Scopul nostru însă, este să clasificăm restaurantele, nu fiecare poză în parte, așa că, pentru fiecare restaurant, vom combina vectorii caracteristici a fiecărei fotografii din acesta, recurgând la calcularea medii aritmetice pentru acești vectori. După executarea acestui pas, setul nostru de date va avea forma $(1996,2048)$, având pentru fiecare restaurant câte un vector de 2048 de componente și folosind PCA (Principal Component Analysis) putem vizualiza acești vectori (\textcolor{yellow}{GALBEN} - clasa este prezentă, \textcolor{purple}{MOV} - clasa este absentă).
 
 \begin{center}
 \includegraphics[scale=0.4]{class0} \\
@@ -92,7 +92,7 @@ Pentru implementarea întregului pipeline am ales Python ca limbaj de programare
 
 \begin{itemize}
 \item \textbf{Numpy} pentru algebra lineara.
-\item \textbf{H5PY} pentru fluxul I/O pentru fișiere în formatul HDF5.
+\item \textbf{H5PY} pentru fluxul I/O folosind fișiere în formatul HDF5.
 \item \textbf{OpenCV} pentru preprocesarea imaginilor.
 \item \textbf{Scikit-Learn} pentru prelucrarea de date.
 \item \textbf{TensorFlow} pentru construirea modelului de deep learning propriu-zis.
@@ -130,3 +130,14 @@ Vom analiza diferențele dintre eroarea umană pentru acestă problemă și cea 
 \end{center}
 
 Putem raporta o performanță a algoritmului nostru de $\approx 82\%$, depășind cu mult cea umană care este de $\approx 55\%$.
+
+\pagebreak
+
+\section{Concluzii}
+Aplicația dezvoltată în cadrul acestei lucrări a fost un prilej foarte bun pentru a pune în practică noțiunile de învățare automată dobândite pe parcursul facultății și de a mă dezvoltă în acest domeniu. \\
+
+Pot să afirm că cea mai dificilă parte din proiect a fost găsirea celui mai bun model pentru modulul de extragere de caracteristici. Procesul a fost unul foarte iterativ, iar pentru a aplica un model și, pe urmă, a-l testa a durat, în medie, 14 ore. Din fericire, framework-urile moderne pentru învățare automată, pe care le-am amintit în această lucrare, fac procesul de modificare a structurii unei rețele neuronale foarte rapid din punct de vedere al codului scris. \\
+
+Totodată, a fost prima dată când a trebuit să lucrez cu un volum mare de date ce nu putea fi procesat integral în memorie. Aici, am adoptat formatul HDF5 pentru persistența datelor, deoarece acest format salvează datele folosind o structura de tip arbore B+, iar prin intermediul unui modul în python, "interogarea" unor date nestructurate este facilă. \\
+
+În final, algoritmul rezultat poate sa ne ofere informații esențiale din fotografiile dintr-un restaurant cu o încredere suficient de mare. Ea are potențialul de a fi o componentă importantă în cadrul unei aplicații de rezervare a localurilor, eliminând, aproape în întregime, partea umană în agregarea acestora. 

@@ -1,41 +1,43 @@
 \babel@toc {romanian}{}
-\contentsline {section}{\numberline {1}Problema clasific\IeC {\u a}rii. Tipuri de clasificare}{8}
-\contentsline {subsection}{\numberline {1.1}\IeC {\^I}nv\IeC {\u a}\IeC {{\textcommabelow t}}are supervizat\IeC {\u a}}{8}
-\contentsline {subsection}{\numberline {1.2}Clasificare binar\IeC {\u a}}{8}
-\contentsline {subsection}{\numberline {1.3}Clasificare cu clase multiple}{8}
-\contentsline {subsection}{\numberline {1.4}Clasificare cu etichete multiple}{9}
-\contentsline {subsection}{\numberline {1.5}\IeC {\^I}nv\IeC {\u a}\IeC {{\textcommabelow t}}are multi-instan\IeC {{\textcommabelow t}}\IeC {\u a}}{9}
-\contentsline {section}{\numberline {2}Re\IeC {{\textcommabelow t}}ele neuronale}{11}
-\contentsline {subsection}{\numberline {2.1}Regresie logistic\IeC {\u a}}{11}
-\contentsline {subsection}{\numberline {2.2}Metode de optimizare bazate pe gradient}{12}
-\contentsline {subsubsection}{\numberline {2.2.1}Metoda gradientului descendent}{12}
-\contentsline {subsubsection}{\numberline {2.2.2}Momentum}{13}
-\contentsline {subsubsection}{\numberline {2.2.3}RMSProp}{15}
-\contentsline {subsubsection}{\numberline {2.2.4}Adam}{15}
-\contentsline {subsection}{\numberline {2.3}Re\IeC {{\textcommabelow t}}ele neuronale}{16}
-\contentsline {subsubsection}{\numberline {2.3.1}Structur\IeC {\u a} \IeC {{\textcommabelow s}}i nota\IeC {{\textcommabelow t}}ii}{16}
-\contentsline {subsubsection}{\numberline {2.3.2}Func\IeC {{\textcommabelow t}}ii de activare}{17}
-\contentsline {subsubsection}{\numberline {2.3.3}Propagarea \IeC {\^\i }nainte (Feed-Foward Propagation)}{19}
-\contentsline {subsubsection}{\numberline {2.3.4}Func\IeC {{\textcommabelow t}}ia de cost}{20}
-\contentsline {subsubsection}{\numberline {2.3.5}Propagarea \IeC {\^\i }napoi (Backpropagation)}{21}
-\contentsline {subsubsection}{\numberline {2.3.6}Regularizare $L_2$ \IeC {{\textcommabelow s}}i Dropout}{22}
-\contentsline {section}{\numberline {3}Re\IeC {{\textcommabelow t}}ele neuronale convolu\IeC {{\textcommabelow t}}ionale (CNNs)}{24}
-\contentsline {subsection}{\numberline {3.1}Opera\IeC {{\textcommabelow t}}ia de convolu\IeC {{\textcommabelow t}}ie}{24}
-\contentsline {subsubsection}{\numberline {3.1.1}Padding \IeC {{\textcommabelow s}}i Striding}{24}
-\contentsline {subsubsection}{\numberline {3.1.2}Convolu\IeC {{\textcommabelow t}}ie peste volume}{26}
-\contentsline {subsubsection}{\numberline {3.1.3}Max pooling}{27}
-\contentsline {subsection}{\numberline {3.2}Arhitecturi celebre}{27}
-\contentsline {subsubsection}{\numberline {3.2.1}LeNet-5}{28}
-\contentsline {subsubsection}{\numberline {3.2.2}AlexNet}{28}
-\contentsline {subsubsection}{\numberline {3.2.3}VGG-16}{29}
-\contentsline {subsubsection}{\numberline {3.2.4}ResNet}{29}
-\contentsline {subsubsection}{\numberline {3.2.5}Inception}{30}
-\contentsline {subsubsection}{\numberline {3.2.6}Xception}{32}
-\contentsline {subsection}{\numberline {3.3}Transfer Learning}{33}
-\contentsline {section}{\numberline {4}Aplicare pe setul de date}{34}
-\contentsline {subsection}{\numberline {4.1}Problema pe care o rezolv\IeC {\u a}m}{34}
-\contentsline {subsection}{\numberline {4.2}Abordare}{34}
-\contentsline {subsubsection}{\numberline {4.2.1}Prelucrare date}{36}
-\contentsline {subsubsection}{\numberline {4.2.2}Extragerea de caracteristici}{36}
-\contentsline {subsection}{\numberline {4.3}Detalii de implementare}{41}
-\contentsline {subsection}{\numberline {4.4}Rezultate}{42}
+\contentsline {section}{\numberline {1}Introducere}{5}
+\contentsline {section}{\numberline {2}Problema clasific\IeC {\u a}rii. Tipuri de clasificare}{8}
+\contentsline {subsection}{\numberline {2.1}\IeC {\^I}nv\IeC {\u a}\IeC {{\textcommabelow t}}are supervizat\IeC {\u a}}{8}
+\contentsline {subsection}{\numberline {2.2}Clasificare binar\IeC {\u a}}{8}
+\contentsline {subsection}{\numberline {2.3}Clasificare cu clase multiple}{8}
+\contentsline {subsection}{\numberline {2.4}Clasificare cu etichete multiple}{9}
+\contentsline {subsection}{\numberline {2.5}\IeC {\^I}nv\IeC {\u a}\IeC {{\textcommabelow t}}are multi-instan\IeC {{\textcommabelow t}}\IeC {\u a}}{9}
+\contentsline {section}{\numberline {3}Re\IeC {{\textcommabelow t}}ele neuronale}{11}
+\contentsline {subsection}{\numberline {3.1}Regresie logistic\IeC {\u a}}{11}
+\contentsline {subsection}{\numberline {3.2}Metode de optimizare bazate pe gradient}{12}
+\contentsline {subsubsection}{\numberline {3.2.1}Metoda gradientului descendent}{12}
+\contentsline {subsubsection}{\numberline {3.2.2}Momentum}{13}
+\contentsline {subsubsection}{\numberline {3.2.3}RMSProp}{15}
+\contentsline {subsubsection}{\numberline {3.2.4}Adam}{15}
+\contentsline {subsection}{\numberline {3.3}Re\IeC {{\textcommabelow t}}ele neuronale}{16}
+\contentsline {subsubsection}{\numberline {3.3.1}Structur\IeC {\u a} \IeC {{\textcommabelow s}}i nota\IeC {{\textcommabelow t}}ii}{16}
+\contentsline {subsubsection}{\numberline {3.3.2}Func\IeC {{\textcommabelow t}}ii de activare}{17}
+\contentsline {subsubsection}{\numberline {3.3.3}Propagarea \IeC {\^\i }nainte (Feed-Foward Propagation)}{19}
+\contentsline {subsubsection}{\numberline {3.3.4}Func\IeC {{\textcommabelow t}}ia de cost}{20}
+\contentsline {subsubsection}{\numberline {3.3.5}Propagarea \IeC {\^\i }napoi (Backpropagation)}{21}
+\contentsline {subsubsection}{\numberline {3.3.6}Regularizare $L_2$ \IeC {{\textcommabelow s}}i Dropout}{22}
+\contentsline {section}{\numberline {4}Re\IeC {{\textcommabelow t}}ele neuronale convolu\IeC {{\textcommabelow t}}ionale (CNNs)}{24}
+\contentsline {subsection}{\numberline {4.1}Opera\IeC {{\textcommabelow t}}ia de convolu\IeC {{\textcommabelow t}}ie}{24}
+\contentsline {subsubsection}{\numberline {4.1.1}Padding \IeC {{\textcommabelow s}}i Striding}{24}
+\contentsline {subsubsection}{\numberline {4.1.2}Convolu\IeC {{\textcommabelow t}}ie peste volume}{26}
+\contentsline {subsubsection}{\numberline {4.1.3}Max pooling}{27}
+\contentsline {subsection}{\numberline {4.2}Arhitecturi celebre}{27}
+\contentsline {subsubsection}{\numberline {4.2.1}LeNet-5}{28}
+\contentsline {subsubsection}{\numberline {4.2.2}AlexNet}{28}
+\contentsline {subsubsection}{\numberline {4.2.3}VGG-16}{29}
+\contentsline {subsubsection}{\numberline {4.2.4}ResNet}{29}
+\contentsline {subsubsection}{\numberline {4.2.5}Inception}{30}
+\contentsline {subsubsection}{\numberline {4.2.6}Xception}{32}
+\contentsline {subsection}{\numberline {4.3}Transfer Learning}{33}
+\contentsline {section}{\numberline {5}Aplicare pe setul de date}{34}
+\contentsline {subsection}{\numberline {5.1}Problema pe care o rezolv\IeC {\u a}m}{34}
+\contentsline {subsection}{\numberline {5.2}Abordare}{34}
+\contentsline {subsubsection}{\numberline {5.2.1}Prelucrare date}{36}
+\contentsline {subsubsection}{\numberline {5.2.2}Extragerea de caracteristici}{36}
+\contentsline {subsection}{\numberline {5.3}Detalii de implementare}{41}
+\contentsline {subsection}{\numberline {5.4}Rezultate}{42}
+\contentsline {section}{\numberline {6}Concluzii}{43}
