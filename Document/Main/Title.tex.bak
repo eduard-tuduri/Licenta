@@ -49,29 +49,33 @@
 \end{center}
 \end{titlepage}
 
+\null \hfill Avizat, \\
+\null \hfill Îndrumător Lucrare de Licență \\
+\null \hfill Titlu, Numele și Prenumele \noindent\rule{5cm}{0.4pt} \\
+\null \hfill Data \noindent\rule{3cm}{0.4pt} \quad Semnătura \noindent\rule{3cm}{0.4pt} \\
+
 \begin{center}
-\large{DECLARAŢIE PRIVIND ORIGINALITATE ŞI RESPECTAREA DREPTURILOR DE AUTOR} \\
+\textbf{DECLARAȚIE privind originalitatea conținutului lucrării de licență}
 \end{center}
 
-Prin prezenta declar că Lucrarea de licenţă cu titlul „Clasificare cu etichete multiple bazată pe imagini” este scrisă
-de mine şi nu a mai fost prezentată niciodată la o altă facultate sau instituţie de
-învăţământ superior din ţară sau din străinătate. De asemenea, declar că toate sursele
-utilizate, inclusiv cele preluate de pe Internet, sunt indicate în lucrare, cu respectarea
-regulilor de evitare a plagiatului:
+Subsemntatul(a) \quad \noindent\rule{10cm}{0.4pt} \\
+domiciliul în \noindent\rule{10cm}{0.4pt} \\
+născut(ă) la data de \noindent\rule{3cm}{0.4pt}, \quad identificat prin CNP \noindent\rule{5cm}{0.4pt} \\
+absolvent(a) al(a) Universității „Alexandru Ioan Cuza” din Iași, Facultatea de \\ 
+\noindent\rule{3cm}{0.4pt} \quad specializarea \noindent\rule{5cm}{0.4pt}, \quad promoția \\
+\noindent\rule{3cm}{0.4pt}, \; declar pe propria răspundere, cunoscând consecințele falsului în
+declarații în sensul art. 326 din Noul Cod Penal și dispozițiile Legii Educației Naționale nr.
+1/2011 art.143 al. 4 si 5 referitoare la plagiat, că lucrarea de licență cu titlul: \\
+\noindent\rule{17cm}{0.4pt} \\
+\noindent\rule{17cm}{0.4pt} \\
+\noindent\rule{5cm}{0.4pt} \quad elaborată \quad sub \quad îndrumarea \quad dl. \quad / \quad d-na \\
+\noindent\rule{10cm}{0.4pt}, \; pe care urmează să o susțină în fața comisiei este originală, îmi aparține și îmi asum conținutul său în întregime. \\
 
-\begin{itemize}
-\item toate fragmentele de text reproduse exact, chiar şi în traducere proprie din altă limbă, sunt scrise între ghilimele şi deţin referinţa precisă a sursei;
-\item reformularea în cuvinte proprii a textelor scrise de către alţi autori deţine referinţa precisă;
-\item codul sursă, imaginile etc. preluate din proiecte open-source sau alte surse sunt utilizate cu respectarea drepturilor de autor şi deţin referinţe precise;
-\item rezumarea ideilor altor autori precizează referinţa precisă la textul original.
-\end{itemize}
+De asemenea, declar că sunt de acord ca lucrarea mea de licență să fie verificată prin orice modalitate legală pentru confirmarea originalității, consimțind inclusiv la introducerea conținutului său într-o bază de date în acest scop. \\
 
-Iași, \textit{data} \\
+Am luat la cunoștință despre faptul că este interzisă comercializarea de lucrări științifice in vederea facilitării fasificării de către cumpărător a calității de autor al unei lucrări de licență, de diploma sau de disertație și în acest sens, declar pe proprie 16 răspundere că lucrarea de față nu a fost copiată ci reprezintă rodul cercetării pe care am întreprins-o. \\
 
-\hfill Absolvent, \\
-\null \hfill Tuduri Eduard Gabriel \\
-\null \hfill \noindent\rule{5cm}{0.4pt} \\
-\null \hfill (semnătură în original)
+Dată azi, \noindent\rule{3cm}{0.4pt} \hfill Semnătură student \noindent\rule{3cm}{0.4pt}
 
 \pagebreak
 
@@ -87,7 +91,7 @@ Ioan Cuza” din Iași, să utilizeze, modifice, reproducă şi să distribuie �
 necomerciale programele-calculator, format executabil şi sursă, realizate de mine în
 cadrul prezentei lucrări de licenţă. \\
 
-Iași, \textit{data} \\
+Iași, \\
 
 \hfill Absolvent, \\
 \null \hfill Tuduri Eduard Gabriel \\

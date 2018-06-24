@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.4)  17 JUN 2018 18:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.4)  24 JUN 2018 16:20
 entering extended mode
 **./Licenta.tex
 (Licenta.tex
@@ -851,46 +851,62 @@ Package pdftex.def Info: fii.png  used on input line 9.
 
 {C:/Users/eduar/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./fii.png>]
  [1]
-("C:\Users\eduar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-32.def"
-File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-)
 ("C:\Users\eduar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 63.
+Underfull \hbox (badness 10000) in paragraph at lines 52--56
 
-("C:\Users\eduar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+ []
+
+("C:\Users\eduar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-32.def"
+File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 63.
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
-
- []
-
-[1]
-Underfull \hbox (badness 10000) in paragraph at lines 82--84
-
+Overfull \hbox (13.94182pt too wide) in paragraph at lines 61--73
+[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--89
+Overfull \hbox (13.94182pt too wide) in paragraph at lines 61--73
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
-) [2] (Licenta.toc [3
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+
+ []
+
+[1] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
+ []
+
+) [3] (Licenta.toc [4
 
 ])
 \tf@toc=\write4
 \openout4 = `Licenta.toc'.
 
- [4]
+ [5]
 \openout2 = `Introduction.aux'.
 
  (Introduction.tex
@@ -908,7 +924,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-[5
+[6
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
@@ -920,10 +936,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-[6]) [7]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 27.
+("C:\Users\eduar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
+
+[7]) [8]
 \openout2 = `Classification.aux'.
 
- (Classification.tex [8
+ (Classification.tex [9
 
 
 ]
@@ -945,8 +968,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
-[9]
-<restaurantInstance.png, id=63, 754.31813pt x 450.18187pt>
+[10]
+<restaurantInstance.png, id=66, 754.31813pt x 450.18187pt>
 File: restaurantInstance.png Graphic file (type png)
 <use restaurantInstance.png>
 Package pdftex.def Info: restaurantInstance.png  used on input line 61.
@@ -956,20 +979,20 @@ Overfull \hbox (26.78535pt too wide) in paragraph at lines 60--69
 [][] 
  []
 
-) [10 <./restaurantInstance.png>]
+) [11 <./restaurantInstance.png>]
 \openout2 = `NeuralNetworks.aux'.
 
- (NeuralNetworks.tex [11
+ (NeuralNetworks.tex [12
 
 
 ]
-<gradientDescent.png, id=72, 604.2575pt x 327.2225pt>
+<gradientDescent.png, id=75, 604.2575pt x 327.2225pt>
 File: gradientDescent.png Graphic file (type png)
 <use gradientDescent.png>
 Package pdftex.def Info: gradientDescent.png  used on input line 64.
 (pdftex.def)             Requested size: 302.128pt x 163.61084pt.
- [12 <./gradientDescent.png (PNG copy)>]
-<gradientDescentLearningRate.png, id=76, 1606.0pt x 750.805pt>
+ [13 <./gradientDescent.png (PNG copy)>]
+<gradientDescentLearningRate.png, id=79, 1606.0pt x 750.805pt>
 File: gradientDescentLearningRate.png Graphic file (type png)
 <use gradientDescentLearningRate.png>
 Package pdftex.def Info: gradientDescentLearningRate.png  used on input line 71
@@ -980,25 +1003,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
-<expWeightedAvg.png, id=77, 503.8825pt x 271.0125pt>
+<expWeightedAvg.png, id=80, 503.8825pt x 271.0125pt>
 File: expWeightedAvg.png Graphic file (type png)
 <use expWeightedAvg.png>
 Package pdftex.def Info: expWeightedAvg.png  used on input line 81.
 (pdftex.def)             Requested size: 352.71535pt x 189.70744pt.
-[13 <./gradientDescentLearningRate.png (PNG copy)>]
-<momentum.png, id=81, 823.075pt x 174.6525pt>
+[14 <./gradientDescentLearningRate.png (PNG copy)>]
+<momentum.png, id=84, 823.075pt x 174.6525pt>
 File: momentum.png Graphic file (type png)
 <use momentum.png>
 Package pdftex.def Info: momentum.png  used on input line 117.
 (pdftex.def)             Requested size: 411.53648pt x 87.32603pt.
- [14 <./expWeightedAvg.png>] [15 <./momentum.png>]
-<neuron.png, id=90, 604.1772pt x 350.2686pt>
+ [15 <./expWeightedAvg.png>] [16 <./momentum.png>]
+<neuron.png, id=93, 604.1772pt x 350.2686pt>
 File: neuron.png Graphic file (type png)
 <use neuron.png>
 Package pdftex.def Info: neuron.png  used on input line 229.
 (pdftex.def)             Requested size: 302.08786pt x 175.13387pt.
- [16] [17 <./neuron.png>] [18]
-<feedFoward.png, id=102, 275.52937pt x 161.85469pt>
+ [17] [18 <./neuron.png>] [19]
+<feedFoward.png, id=105, 275.52937pt x 161.85469pt>
 File: feedFoward.png Graphic file (type png)
 <use feedFoward.png>
 Package pdftex.def Info: feedFoward.png  used on input line 333.
@@ -1013,24 +1036,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 364--365
 
  []
 
-[19 <./feedFoward.png>] [20]
+[20 <./feedFoward.png>] [21]
 File: feedFoward.png Graphic file (type png)
 <use feedFoward.png>
 Package pdftex.def Info: feedFoward.png  used on input line 400.
 (pdftex.def)             Requested size: 275.52869pt x 161.85428pt.
- [21]
-<fittings.jpg, id=115, 528.47438pt x 252.945pt>
+ [22]
+<fittings.jpg, id=118, 528.47438pt x 252.945pt>
 File: fittings.jpg Graphic file (type jpg)
 <use fittings.jpg>
 Package pdftex.def Info: fittings.jpg  used on input line 421.
 (pdftex.def)             Requested size: 369.92953pt x 177.06029pt.
- [22 <./fittings.jpg>]
-<dropout.png, id=119, 1047.915pt x 521.95pt>
+ [23 <./fittings.jpg>]
+<dropout.png, id=123, 1047.915pt x 521.95pt>
 File: dropout.png Graphic file (type png)
 <use dropout.png>
 Package pdftex.def Info: dropout.png  used on input line 440.
 (pdftex.def)             Requested size: 314.37692pt x 156.5862pt.
-) [23 <./dropout.png (PNG copy)>]
+) [24 <./dropout.png (PNG copy)>]
 \openout2 = `FeatureExtraction.aux'.
 
  (FeatureExtraction.tex
@@ -1041,21 +1064,21 @@ m/n/12 o ma-trice $\OML/cmm/m/it/12 kernel\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 fil
 ter\OT1/cmr/m/n/12 )$.
  []
 
-<convolution.png, id=124, 236.52pt x 111.252pt>
+<convolution.png, id=127, 236.52pt x 111.252pt>
 File: convolution.png Graphic file (type png)
 <use convolution.png>
 Package pdftex.def Info: convolution.png  used on input line 9.
 (pdftex.def)             Requested size: 354.77911pt x 166.87758pt.
-<padding.png, id=125, 620.3175pt x 321.2pt>
+<padding.png, id=128, 620.3175pt x 321.2pt>
 File: padding.png Graphic file (type png)
 <use padding.png>
 Package pdftex.def Info: padding.png  used on input line 18.
 (pdftex.def)             Requested size: 434.2193pt x 224.83847pt.
-[24
+[25
 
 
  <./convolution.png>]
-<stride.png, id=130, 472.01344pt x 185.94469pt>
+<stride.png, id=133, 472.01344pt x 185.94469pt>
 File: stride.png Graphic file (type png)
 <use stride.png>
 Package pdftex.def Info: stride.png  used on input line 26.
@@ -1071,31 +1094,31 @@ Overfull \hbox (31.61371pt too wide) in paragraph at lines 30--31
 []$. 
  []
 
-[25 <./padding.png> <./stride.png>]
-<convVolumes.png, id=135, 695.59875pt x 282.05376pt>
+[26 <./padding.png> <./stride.png>]
+<convVolumes.png, id=138, 695.59875pt x 282.05376pt>
 File: convVolumes.png Graphic file (type png)
 <use convVolumes.png>
 Package pdftex.def Info: convVolumes.png  used on input line 37.
 (pdftex.def)             Requested size: 278.23457pt x 112.81949pt.
-<convLayer.png, id=136, 982.67125pt x 470.75874pt>
+<convLayer.png, id=139, 982.67125pt x 470.75874pt>
 File: convLayer.png Graphic file (type png)
 <use convLayer.png>
 Package pdftex.def Info: convLayer.png  used on input line 43.
 (pdftex.def)             Requested size: 393.06154pt x 188.30016pt.
- [26 <./convVolumes.png> <./convLayer.png>]
-<maxPooling.png, id=142, 604.2575pt x 282.05376pt>
+ [27 <./convVolumes.png> <./convLayer.png>]
+<maxPooling.png, id=145, 604.2575pt x 282.05376pt>
 File: maxPooling.png Graphic file (type png)
 <use maxPooling.png>
 Package pdftex.def Info: maxPooling.png  used on input line 53.
 (pdftex.def)             Requested size: 302.128pt x 141.02652pt.
 
-[27 <./maxPooling.png (PNG copy)>]
-<LeNet5.png, id=146, 903.375pt x 356.33125pt>
+[28 <./maxPooling.png (PNG copy)>]
+<LeNet5.png, id=149, 903.375pt x 356.33125pt>
 File: LeNet5.png Graphic file (type png)
 <use LeNet5.png>
 Package pdftex.def Info: LeNet5.png  used on input line 65.
 (pdftex.def)             Requested size: 451.6864pt x 178.16518pt.
-<alexnet.png, id=147, 313.4109pt x 110.0913pt>
+<alexnet.png, id=150, 313.4109pt x 110.0913pt>
 File: alexnet.png Graphic file (type png)
 <use alexnet.png>
 Package pdftex.def Info: alexnet.png  used on input line 72.
@@ -1105,36 +1128,36 @@ Overfull \hbox (0.36017pt too wide) in paragraph at lines 72--73
  [] 
  []
 
-[28 <./LeNet5.png> <./alexnet.png>]
-<vgg16.png, id=152, 366.168pt x 208.6194pt>
+[29 <./LeNet5.png> <./alexnet.png>]
+<vgg16.png, id=156, 366.168pt x 208.6194pt>
 File: vgg16.png Graphic file (type png)
 <use vgg16.png>
 Package pdftex.def Info: vgg16.png  used on input line 79.
 (pdftex.def)             Requested size: 366.1671pt x 208.61888pt.
-<resnet.jpg, id=153, 640.3925pt x 360.34625pt>
+<resnet.jpg, id=157, 640.3925pt x 360.34625pt>
 File: resnet.jpg Graphic file (type jpg)
 <use resnet.jpg>
 Package pdftex.def Info: resnet.jpg  used on input line 87.
 (pdftex.def)             Requested size: 320.19547pt x 180.17268pt.
- [29 <./vgg16.png>]
-<residualBlock.png, id=158, 377.41pt x 220.825pt>
+ [30 <./vgg16.png>]
+<residualBlock.png, id=161, 377.41pt x 220.825pt>
 File: residualBlock.png Graphic file (type png)
 <use residualBlock.png>
 Package pdftex.def Info: residualBlock.png  used on input line 92.
 (pdftex.def)             Requested size: 264.1852pt x 154.57643pt.
- [30 <./resnet.jpg> <./residualBlock.png (PNG copy)>]
-<inceptionBlock.png, id=162, 1063.975pt x 505.89pt>
+ [31 <./resnet.jpg> <./residualBlock.png (PNG copy)>]
+<inceptionBlock.png, id=165, 1063.975pt x 505.89pt>
 File: inceptionBlock.png Graphic file (type png)
 <use inceptionBlock.png>
 Package pdftex.def Info: inceptionBlock.png  used on input line 102.
 (pdftex.def)             Requested size: 425.58246pt x 202.3524pt.
-<inception.png, id=163, 632.6034pt x 174.4116pt>
+<inception.png, id=166, 632.6034pt x 174.4116pt>
 File: inception.png Graphic file (type png)
 <use inception.png>
 Package pdftex.def Info: inception.png  used on input line 115.
 (pdftex.def)             Requested size: 442.81935pt x 122.08728pt.
- [31 <./inceptionBlock.png (PNG copy)> <./inception.png>]
-<xception.jpg, id=168, 1606.0pt x 1099.10625pt>
+ [32 <./inceptionBlock.png (PNG copy)> <./inception.png>]
+<xception.jpg, id=171, 1606.0pt x 1099.10625pt>
 File: xception.jpg Graphic file (type jpg)
 <use xception.jpg>
 Package pdftex.def Info: xception.jpg  used on input line 124.
@@ -1144,12 +1167,12 @@ Overfull \hbox (12.0487pt too wide) in paragraph at lines 124--126
  [] 
  []
 
-<depthconv.png, id=169, 720.6925pt x 895.345pt>
+<depthconv.png, id=172, 720.6925pt x 895.345pt>
 File: depthconv.png Graphic file (type png)
 <use depthconv.png>
 Package pdftex.def Info: depthconv.png  used on input line 131.
 (pdftex.def)             Requested size: 288.2719pt x 358.13165pt.
-[32 <./xception.jpg>]) [33 <./depthconv.png (PNG copy)>]
+[33 <./xception.jpg>]) [34 <./depthconv.png (PNG copy)>]
 \openout2 = `Implementation.aux'.
 
  (Implementation.tex
@@ -1157,106 +1180,106 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-[34
+[35
 
 
 ]
-<pipeline.jpg, id=179, 640.3925pt x 384.43625pt>
+<pipeline.jpg, id=183, 640.3925pt x 384.43625pt>
 File: pipeline.jpg Graphic file (type jpg)
 <use pipeline.jpg>
 Package pdftex.def Info: pipeline.jpg  used on input line 43.
 (pdftex.def)             Requested size: 384.23846pt x 230.66351pt.
- [35 <./pipeline.jpg>]
-<class0.png, id=184, 1088.56688pt x 543.53062pt>
+ [36 <./pipeline.jpg>]
+<class0.png, id=187, 1088.56688pt x 543.53062pt>
 File: class0.png Graphic file (type png)
 <use class0.png>
 Package pdftex.def Info: class0.png  used on input line 53.
 (pdftex.def)             Requested size: 435.41904pt x 217.40839pt.
-<class1.png, id=185, 1085.55562pt x 545.03625pt>
+ [37 <./class0.png>]
+<class1.png, id=192, 1085.55562pt x 545.03625pt>
 File: class1.png Graphic file (type png)
 <use class1.png>
-Package pdftex.def Info: class1.png  used on input line 56.
+Package pdftex.def Info: class1.png  used on input line 57.
 (pdftex.def)             Requested size: 434.21455pt x 218.01064pt.
- [36 <./class0.png>]
-<class2.png, id=190, 1087.06125pt x 542.77782pt>
+<class2.png, id=193, 1087.06125pt x 542.77782pt>
 File: class2.png Graphic file (type png)
 <use class2.png>
-Package pdftex.def Info: class2.png  used on input line 59.
+Package pdftex.def Info: class2.png  used on input line 61.
 (pdftex.def)             Requested size: 434.81679pt x 217.10727pt.
-<class3.png, id=191, 1083.29718pt x 542.77782pt>
+<class3.png, id=194, 1083.29718pt x 542.77782pt>
 File: class3.png Graphic file (type png)
 <use class3.png>
-Package pdftex.def Info: class3.png  used on input line 62.
+Package pdftex.def Info: class3.png  used on input line 65.
 (pdftex.def)             Requested size: 433.3112pt x 217.10727pt.
- [37 <./class1.png> <./class2.png>]
-<class4.png, id=197, 1087.06125pt x 545.78906pt>
+ [38 <./class1.png> <./class2.png>]
+<class4.png, id=200, 1087.06125pt x 545.78906pt>
 File: class4.png Graphic file (type png)
 <use class4.png>
-Package pdftex.def Info: class4.png  used on input line 65.
+Package pdftex.def Info: class4.png  used on input line 69.
 (pdftex.def)             Requested size: 434.81679pt x 218.31175pt.
-<class5.png, id=198, 1083.29718pt x 542.025pt>
+<class5.png, id=201, 1083.29718pt x 542.025pt>
 File: class5.png Graphic file (type png)
 <use class5.png>
-Package pdftex.def Info: class5.png  used on input line 68.
+Package pdftex.def Info: class5.png  used on input line 73.
 (pdftex.def)             Requested size: 433.3112pt x 216.80615pt.
- [38 <./class3.png> <./class4.png>]
-<class6.png, id=204, 1084.80281pt x 542.025pt>
+ [39 <./class3.png> <./class4.png>]
+<class6.png, id=207, 1084.80281pt x 542.025pt>
 File: class6.png Graphic file (type png)
 <use class6.png>
-Package pdftex.def Info: class6.png  used on input line 71.
+Package pdftex.def Info: class6.png  used on input line 77.
 (pdftex.def)             Requested size: 433.91344pt x 216.80615pt.
-<class7.png, id=205, 1087.81406pt x 542.025pt>
+<class7.png, id=208, 1087.81406pt x 542.025pt>
 File: class7.png Graphic file (type png)
 <use class7.png>
-Package pdftex.def Info: class7.png  used on input line 74.
+Package pdftex.def Info: class7.png  used on input line 81.
 (pdftex.def)             Requested size: 435.11792pt x 216.80615pt.
- [39 <./class5.png> <./class6.png>]
-<class8.png, id=211, 1086.30844pt x 538.26094pt>
+ [40 <./class5.png> <./class6.png>]
+<class8.png, id=214, 1086.30844pt x 538.26094pt>
 File: class8.png Graphic file (type png)
 <use class8.png>
-Package pdftex.def Info: class8.png  used on input line 77.
+Package pdftex.def Info: class8.png  used on input line 85.
 (pdftex.def)             Requested size: 434.51569pt x 215.30055pt.
 
-[40 <./class7.png> <./class8.png>]
-<networkArhitecture.png, id=217, 286.82156pt x 217.5628pt>
+[41 <./class7.png> <./class8.png>]
+<networkArhitecture.png, id=221, 286.82156pt x 217.5628pt>
 File: networkArhitecture.png Graphic file (type png)
 <use networkArhitecture.png>
-Package pdftex.def Info: networkArhitecture.png  used on input line 86.
+Package pdftex.def Info: networkArhitecture.png  used on input line 94.
 (pdftex.def)             Requested size: 286.82085pt x 217.56227pt.
- [41 <./networkArhitecture.png>] [42]
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
+ [42 <./networkArhitecture.png>] [43]
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
 
-) [43]
+) [44]
 \openout2 = `Bibliography.aux'.
 
- (Bibliography.tex [44
+ (Bibliography.tex [45
 
 
-]) [45] (Licenta.aux (Title.aux) (Introduction.aux) (Classification.aux) (Neura
+]) [46] (Licenta.aux (Title.aux) (Introduction.aux) (Classification.aux) (Neura
 lNetworks.aux) (FeatureExtraction.aux)
 (Implementation.aux) (Bibliography.aux)) ) 
 Here is how much of TeX's memory you used:
- 26357 strings out of 493303
- 644475 string characters out of 3129785
- 827808 words of memory out of 3000000
- 29359 multiletter control sequences out of 15000+200000
+ 26356 strings out of 493303
+ 644467 string characters out of 3129785
+ 827809 words of memory out of 3000000
+ 29358 multiletter control sequences out of 15000+200000
  20247 words of font info for 77 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,12n,102p,1166b,1921s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1289,9 +1312,9 @@ l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/eduar
 /Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mtt12.pfb><C:/Users/eduar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
 amsfonts/symbols/msbm10.pfb>
-Output written on Licenta.pdf (47 pages, 5495041 bytes).
+Output written on Licenta.pdf (48 pages, 5496230 bytes).
 PDF statistics:
- 312 PDF objects out of 1000 (max. 8388607)
+ 315 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  193 words of extra memory for PDF output out of 10000 (max. 10000000)
 

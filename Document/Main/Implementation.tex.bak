@@ -52,27 +52,35 @@ Pentru fiecare imagine de mărime 299x299 introdusă în modelul Xception, obți
 \begin{center}
 \includegraphics[scale=0.4]{class0} \\
 \textit{Grafic pentru prima clasă: bun pentru prânz} \\
+\hfill \break
 
 \includegraphics[scale=0.4]{class1} \\
 \textit{A doua clasă: bun pentru cină} \\
+\hfill \break
 
 \includegraphics[scale=0.4]{class2} \\ 
 \textit{A treia clasă: acceptă rezervări} \\ 
+\hfill \break
 
 \includegraphics[scale=0.4]{class3} \\
 \textit{A patra clasă: are sejur în aer liber} \\
+\hfill \break
 
 \includegraphics[scale=0.4]{class4} \\
 \textit{A cincea clasă: este scump} \\
+\hfill \break
 
 \includegraphics[scale=0.4]{class5} \\
 \textit{A șasea clasă: oferă alcool} \\
+\hfill \break
 
 \includegraphics[scale=0.4]{class6} \\
 \textit{A șaptea clasă: are serviciu de masă} \\
+\hfill \break
 
 \includegraphics[scale=0.4]{class7} \\
 \textit{A opta clasă: atmosfera este rustică} \\
+\hfill \break
 
 \includegraphics[scale=0.4]{class8} \\
 \textit{A noua clasă: bun pentru copii} \\
@@ -139,5 +147,7 @@ Aplicația dezvoltată în cadrul acestei lucrări a fost un prilej foarte bun p
 Pot să afirm că cea mai dificilă parte din proiect a fost găsirea celui mai bun model pentru modulul de extragere de caracteristici. Procesul a fost unul foarte iterativ, iar pentru a aplica un model și, pe urmă, a-l testa a durat, în medie, 14 ore. Din fericire, framework-urile moderne pentru învățare automată, pe care le-am amintit în această lucrare, fac procesul de modificare a structurii unei rețele neuronale foarte rapid din punct de vedere al codului scris. \\
 
 Totodată, a fost prima dată când a trebuit să lucrez cu un volum mare de date ce nu putea fi procesat integral în memorie. Aici, am adoptat formatul HDF5 pentru persistența datelor, deoarece acest format salvează datele folosind o structura de tip arbore B+, iar prin intermediul unui modul în python, "interogarea" unor date nestructurate este facilă. \\
+
+Principalul adaos pe care l-aș aduce în viitor este întegrarea proiectului într-o aplicație web/mobile care să ajute utilizatorii în a alege cel mai potrivit restaurant în care să-și petreacă timpul. \\
 
 În final, algoritmul rezultat poate sa ne ofere informații esențiale din fotografiile dintr-un restaurant cu o încredere suficient de mare. Ea are potențialul de a fi o componentă importantă în cadrul unei aplicații de rezervare a localurilor, eliminând, aproape în întregime, partea umană în agregarea acestora. 
