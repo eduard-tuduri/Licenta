@@ -5,6 +5,7 @@
 \subsection{Regresie logistică}
 În cadrul acestui model vom calcula, pentru un anumit $x \in \mathbb{R}^{n_x}$, probabilitatea $P(y=1 \vert x)$. Parametrii modelului sunt un vector $w \in \mathbb{R}^{n_x}$ și un număr real $b \in \mathbb{R}$. Astfel, regresia logistică se definește ca $\pred=\sigma(w^Tx + b)$, în care funcția $\sigma$ are următoarea expresie: $\displaystyle{\sigma(z)=\frac{1}{1 + e^{-z}}}$. Această funcție se numește funcția logistică sau funcția sigmoid și are următorul grafic:
 
+
 \begin{center}
 \begin{tikzpicture}
     \begin{axis}%
@@ -26,7 +27,8 @@
         ]
         (x,{1/(1+exp(-x))});
     \end{axis}
-\end{tikzpicture}
+\end{tikzpicture} \\
+Figura 2: Graficul funcției logistice
 \end{center}
 
 Astfel, în contextul clasificării binare, vom eticheta instanța $x$ cu:
@@ -62,13 +64,14 @@ Condiția de oprire poate să fie efectuarea unui număr de iterații sau neîmb
 
 \begin{center}
 \includegraphics[scale=0.5]{gradientDescent} \\
-\textit{Funcția J din figură este o variantă simplificată a celei folosită în model, ignorând parametrul b}
+Figura 3: Funcția J din figură este o variantă simplificată a celei folosită în model, ignorând parametrul b
 \end{center}
 
 Există un așa numit hyper-parametru $\alpha$ (learning rate) care influențează mărimea pașilor efectuați atunci când algoritmul mișcă într-o direcție parametrii funcției ce trebuie minimizată. Acesta este fixat, rămâne constant pe tot parcursul execuției și valorile obișnuite sunt de ordinul $\{0.01, 0.001, 0.0001, ...\}$. Totuși, dacă folosim o valoare mare, apare riscul de a face pași prea mari și să ratăm cu totul minimul, iar dacă folosim o valoare mică, dispare acest risc, însă convergență ar necesita mult mai mult timp din cauza pașilor foarte mici.
 
 \begin{center}
-\includegraphics[scale=0.2]{gradientDescentLearningRate}
+\includegraphics[scale=0.2]{gradientDescentLearningRate} \\
+Figura 4: Efectul parametrului learning rate
 \end{center} 
 
 Problema de optimizare din cadrul regresiei logistice este una convexă iar algoritmul Gradient Descent face o treabă bună în a minimiza costul $J$, neavând inconvenienţa minimelor locale. 
@@ -79,7 +82,7 @@ Problema de optimizare din cadrul regresiei logistice este una convexă iar algo
 Fie un set de puncte într-un plan $\{p_0, p_2, ..., p_n\}$. Prin folosirea acestor medii, se poate aproxima eficient, un drum ce începe din $p_0$, se termină în $p_n$ și trece prin toate cele $n$ puncte.
 \begin{center}
 \includegraphics[scale=0.7]{expWeightedAvg} \\
-\textit{Drumul complet de la } $p_0 \, la \, p_n $ \textit{(linia roșie) și drumul aproximat (linia albastră)}
+Figura 5: Drumul complet de la $p_0 \, la \, p_n $ \textit{(linia roșie)} și drumul aproximat \textit{(linia albastră)}
 \end{center}
 
 Linia albastră este dată de următoarea regulă:
@@ -115,7 +118,7 @@ $v_{db} = 0$
 
 \begin{center}
 \includegraphics[scale=0.5]{momentum} \\
-\textit{Pașii făcuți de algoritmul original} \quad \textit{Pașii făcuți când se folosește Momentum}
+Figura 6: Pașii făcuți de algoritmul original \quad Pașii făcuți când se folosește Momentum
 \end{center}
 
 \subsubsection{RMSProp}
@@ -136,11 +139,11 @@ $s_{db} = 0$
 \end{algorithmic}
 \end{algorithm}
 
-RMSProp își propune să micșoreze oscilațiile în direcții divergente de locația minimului, făcute de Gradient Descent, prin modificarea cu valori foarte mici a parametrilor ce duc spre direcții neoptime. \cite{rmsprop}
+RMSProp își propune să micșoreze oscilațiile în direcții divergente de locația minimului, făcute de Gradient Descent, prin modificarea cu valori foarte mici a parametrilor ce duc spre direcții neoptime \cite{rmsprop}.
 
 \subsubsection{Adam}
 
-Adam combină Momentum și RMSProp într-un singur algoritm oferind, în majoritatea cazurilor, un rezultat mai bun decât cele 2. \cite{adam}
+Adam combină Momentum și RMSProp într-un singur algoritm oferind, în majoritatea cazurilor, un rezultat mai bun decât cele 2 \cite{adam}. 
 
 \begin{algorithm}
 \caption{Adam}
@@ -220,14 +223,15 @@ $\displaystyle{b = b - \alpha \frac{v_{db}^{corrected}}{\sqrt{s_{db}^{corrected}
 \foreach \l [count=\x from 0] in {Input, Hidden, Ouput}
   \node [align=center, above] at (\x*2,2) {\l \\ layer};
 
-\end{tikzpicture}
+\end{tikzpicture} \\
+Figura 7: O rețea neuronală generică
 \end{center}
 
 Imaginea de mai sus reprezintă o rețea neuronală clasică și, la nivel înalt, are 3 componente principale. Un \textit{input layer}, unul sau mai multe \textit{hidden layers} și un \textit{output layer}. Informația pornește de la input către output fiind procesată pe parcurs și la baza întregii construcții se află \textit{neuronul}, reprezentat în figură prin cerc.
 
 \begin{center}
 \includegraphics[scale=0.5]{neuron} \\
-\textit{Un neuron}
+Figura 8: Un neuron
 \end{center}
 
 Fie $x=[x_1,x_2,x_3], \; w=[w_1,w_2,w_3] \quad x,w \in \mathbb{R}^3$ și $b \in \mathbb{R}$ (omis în figură). Operațiile care se fac în cadrul unui neuron sunt:
@@ -268,7 +272,8 @@ Am văzut cât este de simplu să obținem regresia logistică dacă înlocuim f
         ]
         (x,{(exp(x)-exp(-x))/((exp(x)+exp(-x))});
     \end{axis}
-\end{tikzpicture}
+\end{tikzpicture} \\
+Figura 9: Graficul funcției tangente hiberbolice
 \end{center}
 
 \item \textbf{Rectified Linear Unit (ReLU)}: $relu(z)=max(z, 0)$
@@ -294,7 +299,8 @@ Am văzut cât este de simplu să obținem regresia logistică dacă înlocuim f
         ]
         (x,{max(x,0)});
     \end{axis}
-\end{tikzpicture}
+\end{tikzpicture} \\
+Figura 10: Graficul funcției ReLU
 \end{center}
 
 \item \textbf{Leaky ReLU}: $leakyReLU(z)=max(z, 0.01z)$
@@ -321,7 +327,8 @@ Am văzut cât este de simplu să obținem regresia logistică dacă înlocuim f
         ]
         (x,{max(x,0.1*x)});
     \end{axis}
-\end{tikzpicture}
+\end{tikzpicture} \\
+Figura 11: Graficul funcției LeakyReLU
 \end{center}
 
 \end{enumerate}
@@ -330,7 +337,8 @@ Am văzut cât este de simplu să obținem regresia logistică dacă înlocuim f
 În această secțiune vom studia operațiile ce intervin când informația parcurge traseul \textit{input-output}. Fie următoarea rețea neuronală:
 
 \begin{center}
-\includegraphics[scale=1]{feedFoward}
+\includegraphics[scale=1]{feedFoward} \\
+Figura 12: O rețea cu un singur hidden layer
 \end{center}
 
 Modelul nostru primește ca date de intrare un vector $x \in \mathbb{R}^3$, are un \textit{hidden layer} cu 4 neuroni și va oferi ca \textit{output} un număr real. Vom folosi notațiile:
@@ -370,9 +378,9 @@ W^{[2]}=
 \end{bmatrix}
 \]
 
-\item $b^{[1]} \in \mathbb{R}^4 \quad b=[b_1,b_2,b_3,b_4] \rightarrow$ vector ce reține parametrii \textit{b} pentru fiecare neuron din primul layer.
+\item $b^{[1]} \in \mathbb{R}^4, \ b=[b_1,b_2,b_3,b_4] \rightarrow$ vector ce reține parametrii \textit{b} pentru fiecare neuron din primul layer.
 
-\item $b^{[2]} \in \mathbb{R} \quad b=[b_1] \rightarrow$ vector ce reține parametrii \textit{b} pentru fiecare neuron din ultimul layer.
+\item $b^{[2]} \in \mathbb{R}, \ b=[b_1] \rightarrow$ vector ce reține parametrii \textit{b} pentru fiecare neuron din ultimul layer.
 \end{itemize}
 
 Astfel operațiile ce se produc în propagarea $input-output$ sunt:
@@ -386,7 +394,7 @@ Astfel operațiile ce se produc în propagarea $input-output$ sunt:
 \item $\pred=A^{[2]}$
 \end{enumerate}
 
-$A^{[2]}$ reprezintă valoarea finală, fiind activarea layer-ului de $output$, iar $f$ este o funcție oarecare de activare. \cite{deeplearningAI}
+$A^{[2]}$ reprezintă valoarea finală, fiind activarea layer-ului de $output$, iar $f$ este o funcție oarecare de activare \cite{deeplearningAI}. 
 
 \subsubsection{Funcția de cost}
 Am văzut cum regresia logistică este o rețea neuronală foarte simplă. Datorită acestui fapt, funcția de cost folosită atunci, în cadrul clasificării binare, poate fi utilizată pentru a antrena și rețele neuronale complexe.
@@ -397,7 +405,8 @@ $$\displaystyle{J(W,b)=\frac{1}{m}\sum\limits_{i=1}^{m}L(\pred^{(i)}, y^{(i)})}$
 O problemă complicată în antrenarea rețelelor neuronale este propagarea erorii ce este produsă de activarea ultimului layer, cel de $output$, către neuronii aflați la începutul rețelei. Am prezentat modul în care informația parcurge traseul $input-output$, însă, pentru optimizarea parametrilor, trebuie sa parcurgem traseul opus, $output-input$, inversând toate operațiile făcute. Pentru aceasta, vom prezenta algoritmul \textit{Backpropagation}. Fie aceeași rețea neuronală ca la \textit{Feed-Foward Propagation} și folosind aceleași notații:
 
 \begin{center}
-\includegraphics[scale=1]{feedFoward}
+\includegraphics[scale=1]{feedFoward} \\
+Figura 13: O rețea cu un singur hidden layer
 \end{center}
 
 Operațiile efectuate de către \textit{Backpropagation} sunt:
@@ -412,13 +421,14 @@ Operațiile efectuate de către \textit{Backpropagation} sunt:
 \item $\displaystyle{db^{[1]} = \frac{1}{m}} np.sum(dZ^{[1]}, axis=1, keepdims=True)$
 \end{enumerate}
 
-După execuția acestui algoritm, avem calculați 4 vector $\{dW^{[2]},db^{[2]},dW^{[1]},db^{[1]}\}$ pe care îi vom folosi pentru a modifica parametrii $W,b$ a fiecărui layer, folosind unul din algoritmii de optimizare bazați pe gradient prezentați anterior. \cite{deeplearningAI}
+După execuția acestui algoritm, avem calculați 4 vector $\{dW^{[2]},db^{[2]},dW^{[1]},db^{[1]}\}$ pe care îi vom folosi pentru a modifica parametrii $W,b$ a fiecărui layer, folosind unul din algoritmii de optimizare bazați pe gradient prezentați anterior \cite{deeplearningAI}. 
 
 \subsubsection{Regularizare $L_2$ și Dropout}
 În învățarea automată, o problemă frecventă este super-specializarea (overfitting) și, din păcate, aceasta este foarte întâlnită și în deep learning.
 
 \begin{center}
-\includegraphics[scale=0.7]{fittings}
+\includegraphics[scale=0.7]{fittings} \\
+Figura 14: Tipuri de specializări
 \end{center}
 
 Pentru a ameliora acest efect nedorit, vom folosi ceea ce se numește $regularizare$, cele mai folosite 2 forme fiind:
@@ -437,7 +447,8 @@ Pentru a minimiza această funcție $J$ modificată, trebuie ca $W^{[l]} \approx
 Vom fixa un hyper-parametru $keep\_prob \in [0,1]$. În fiecare iterație din procesul de antrenare, vom asocia aleatoriu fiecărui neuron o valoare în intervalul $[0,1]$. Dacă acestă valoare depășește $keep\_prob$, nu vom lua în calcul neuronul respectiv în iterația curentă, setându-i temporar activarea pe 0.
 
 \begin{center}
-\includegraphics[scale=0.3]{dropout}
+\includegraphics[scale=0.3]{dropout} \\
+Figura 15: Efectele dropout-ului
 \end{center}
 
 Efectul acestei metode este de asemenea un model mai simplu care are capacitatea de generalizare mai mare decât a celui ce descrie perfect datele de antrenament.

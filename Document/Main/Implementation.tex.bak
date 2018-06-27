@@ -40,7 +40,8 @@ Vom reaminti structura setului de date pus la dispoziție.
 \end{itemize}
 
 \begin{center}
-\includegraphics[scale=0.6]{pipeline}
+\includegraphics[scale=0.6]{pipeline} \\
+Figura 31: Workflow pentru antrenare și testare
 \end{center}
 
 \subsubsection{Prelucrare date}
@@ -51,15 +52,15 @@ Pentru fiecare imagine de mărime 299x299 introdusă în modelul Xception, obți
 
 \begin{center}
 \includegraphics[scale=0.4]{class0} \\
-\textit{Grafic pentru prima clasă: bun pentru prânz} \\
+Figura 32: Grafic pentru prima clasă: bun pentru prânz \\
 \hfill \break
 
 \includegraphics[scale=0.4]{class1} \\
-\textit{A doua clasă: bun pentru cină} \\
+Figura 33: A doua clasă: bun pentru cină \\
 \hfill \break
 
 \includegraphics[scale=0.4]{class2} \\ 
-\textit{A treia clasă: acceptă rezervări} \\ 
+A treia clasă: acceptă rezervări \\ 
 \hfill \break
 
 \includegraphics[scale=0.4]{class3} \\
@@ -142,7 +143,7 @@ Putem raporta o performanță a algoritmului nostru de $\approx 82\%$, depășin
 \pagebreak
 
 \section{Concluzii}
-Aplicația dezvoltată în cadrul acestei lucrări a fost un prilej foarte bun pentru a pune în practică noțiunile de învățare automată dobândite pe parcursul facultății și de a mă dezvoltă în acest domeniu. \\
+Aplicația dezvoltată în cadrul acestei lucrări a fost un prilej foarte bun pentru a pune în practică noțiunile de învățare automată dobândite pe parcursul facultății și de a mă dezvolta în acest domeniu. \\
 
 Pot să afirm că cea mai dificilă parte din proiect a fost găsirea celui mai bun model pentru modulul de extragere de caracteristici. Procesul a fost unul foarte iterativ, iar pentru a aplica un model și, pe urmă, a-l testa a durat, în medie, 14 ore. Din fericire, framework-urile moderne pentru învățare automată, pe care le-am amintit în această lucrare, fac procesul de modificare a structurii unei rețele neuronale foarte rapid din punct de vedere al codului scris. \\
 

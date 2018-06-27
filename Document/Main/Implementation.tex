@@ -40,7 +40,8 @@ Vom reaminti structura setului de date pus la dispoziție.
 \end{itemize}
 
 \begin{center}
-\includegraphics[scale=0.6]{pipeline}
+\includegraphics[scale=0.6]{pipeline} \\
+Figura 31: Workflow pentru antrenare și testare
 \end{center}
 
 \subsubsection{Prelucrare date}
@@ -51,39 +52,39 @@ Pentru fiecare imagine de mărime 299x299 introdusă în modelul Xception, obți
 
 \begin{center}
 \includegraphics[scale=0.4]{class0} \\
-\textit{Grafic pentru prima clasă: bun pentru prânz} \\
+Figura 32: Grafic pentru prima clasă: bun pentru prânz \\
 \hfill \break
 
 \includegraphics[scale=0.4]{class1} \\
-\textit{A doua clasă: bun pentru cină} \\
+Figura 33: A doua clasă: bun pentru cină \\
 \hfill \break
 
 \includegraphics[scale=0.4]{class2} \\ 
-\textit{A treia clasă: acceptă rezervări} \\ 
+Figura 34: A treia clasă: acceptă rezervări \\ 
 \hfill \break
 
 \includegraphics[scale=0.4]{class3} \\
-\textit{A patra clasă: are sejur în aer liber} \\
+Figura 35: A patra clasă: are sejur în aer liber \\
 \hfill \break
 
 \includegraphics[scale=0.4]{class4} \\
-\textit{A cincea clasă: este scump} \\
+Figura 36: A cincea clasă: este scump \\
 \hfill \break
 
 \includegraphics[scale=0.4]{class5} \\
-\textit{A șasea clasă: oferă alcool} \\
+Figura 37: A șasea clasă: oferă alcool \\
 \hfill \break
 
 \includegraphics[scale=0.4]{class6} \\
-\textit{A șaptea clasă: are serviciu de masă} \\
+Figura 38: A șaptea clasă: are serviciu de masă \\
 \hfill \break
 
 \includegraphics[scale=0.4]{class7} \\
-\textit{A opta clasă: atmosfera este rustică} \\
+Figura 39: A opta clasă: atmosfera este rustică \\
 \hfill \break
 
 \includegraphics[scale=0.4]{class8} \\
-\textit{A noua clasă: bun pentru copii} \\
+Figura 40: A noua clasă: bun pentru copii \\
 \end{center}
 
 \pagebreak
@@ -92,7 +93,7 @@ Pentru setul de date de forma $(1996,2048)$ am adoptat o rețea neuronală clasi
 
 \begin{center}
 \includegraphics[scale=1]{networkArhitecture} \\
-\textit{Cod Python ce instanțiază modelul}
+Figura 41: Cod Python ce instanțiază modelul
 \end{center}
 
 \subsection{Detalii de implementare}
@@ -121,7 +122,7 @@ Vom analiza diferențele dintre eroarea umană pentru acestă problemă și cea 
 \end{center}
 
 \begin{center}
-\textit{Performanța umană pe setul de testare (1996 de restaurante)}
+Tabelul 1: Performanța umană pe setul de testare (1996 de restaurante)
 \end{center}
 
 \begin{center}
@@ -134,7 +135,7 @@ Vom analiza diferențele dintre eroarea umană pentru acestă problemă și cea 
 \end{center}
 
 \begin{center}
-\textit{Performanța algoritmului}
+Tabelul 2: Performanța algoritmului
 \end{center}
 
 Putem raporta o performanță a algoritmului nostru de $\approx 82\%$, depășind cu mult cea umană care este de $\approx 55\%$.
@@ -142,7 +143,7 @@ Putem raporta o performanță a algoritmului nostru de $\approx 82\%$, depășin
 \pagebreak
 
 \section{Concluzii}
-Aplicația dezvoltată în cadrul acestei lucrări a fost un prilej foarte bun pentru a pune în practică noțiunile de învățare automată dobândite pe parcursul facultății și de a mă dezvoltă în acest domeniu. \\
+Aplicația dezvoltată în cadrul acestei lucrări a fost un prilej foarte bun pentru a pune în practică noțiunile de învățare automată dobândite pe parcursul facultății și de a mă dezvolta în acest domeniu. \\
 
 Pot să afirm că cea mai dificilă parte din proiect a fost găsirea celui mai bun model pentru modulul de extragere de caracteristici. Procesul a fost unul foarte iterativ, iar pentru a aplica un model și, pe urmă, a-l testa a durat, în medie, 14 ore. Din fericire, framework-urile moderne pentru învățare automată, pe care le-am amintit în această lucrare, fac procesul de modificare a structurii unei rețele neuronale foarte rapid din punct de vedere al codului scris. \\
 

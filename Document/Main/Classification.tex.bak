@@ -10,7 +10,7 @@
 În această lucrare vom aborda doar subiectul clasificării.
 
 \subsection{Clasificare binară}
-Problema clasificării binare ne cere ca pentru o instanța $x\in\mathbb{R}^p \; p\in\mathbb{N^*}$  dată ca input și o clasă $C$, să returnăm o valoare $y\in\{0, 1\}$ astfel încât $y=1$ dacă $x$ face parte din clasa $C$, sau $y=0$ în caz contrar. Mai formal, trebuie să gasim o funcție $h:\mathbb{R}^p\rightarrow\{0, 1\}$ definită astfel: 
+Problema clasificării binare ne cere ca pentru o instanța $x\in\mathbb{R}^p, \ p\in\mathbb{N^*}$  dată ca input și o clasă $C$, să returnăm o valoare $y\in\{0, 1\}$ astfel încât $y=1$ dacă $x$ face parte din clasa $C$, sau $y=0$ în caz contrar. Mai formal, trebuie să gasim o funcție $h:\mathbb{R}^p\rightarrow\{0, 1\}$ definită astfel: 
 
 \[
 h(x)=
@@ -24,7 +24,7 @@ Această funcție se mai numește model sau ipoteză și scopul unui algoritm de
 Un exemplu de clasificare binară este ca pentru o imagine să decidem dacă în aceasta se află sau nu o pisică. În acest caz, instanța $x$ va fi un vector ce conține valoarea reală a fiecarui pixel și output-ul va fi $y=1$ dacă în imagine apare o pisică sau $y=0$ în caz contrar.
 
 \subsection{Clasificare cu clase multiple}
-La fel ca în cazul clasificării binare, instanța este $x\in\mathbb{R}^p \; p\in\mathbb{N^*}$, însă, în loc de o singură clasă $C$, avem o mulțime $\{C_1,C_2,...,C_k\} \; k\in\mathbb{N^*}$ disjuncte, iar obiectivul este să găsim o funcție $h:\mathbb{R}^p\rightarrow\{0,1,2,...,k\}$ astfel încât:
+La fel ca în cazul clasificării binare, instanța este $x\in\mathbb{R}^p, \ p\in\mathbb{N^*}$, însă, în loc de o singură clasă $C$, avem o mulțime $\{C_1,C_2,...,C_k\} \; k\in\mathbb{N^*}$ disjuncte, iar obiectivul este să găsim o funcție $h:\mathbb{R}^p\rightarrow\{0,1,2,...,k\}$ astfel încât:
 
 \[
 h(x)=
@@ -38,7 +38,7 @@ h(x)=
 \]
 
 \subsection{Clasificare cu etichete multiple}
-Pentru o instanță definită la fel ca mai sus $x\in\mathbb{R}^p \; p\in\mathbb{N^*}$ și o mulțime $C=\{C_1,C_2,...,C_k\} \; k\in\mathbb{N^*}$ vom construi o ipoteză $h:\mathbb{R}^p\rightarrow\{0, 1\}^k$ astfel încât pentru o predicție $y=h(x)$ să avem:
+Pentru o instanță definită la fel ca mai sus $x\in\mathbb{R}^p, \ p\in\mathbb{N^*}$ și o mulțime $C=\{C_1,C_2,...,C_k\} \; k\in\mathbb{N^*}$ vom construi o ipoteză $h:\mathbb{R}^p\rightarrow\{0, 1\}^k$ astfel încât pentru o predicție $y=h(x)$ să avem:
 
 \[
 y_i=
@@ -52,7 +52,7 @@ y_i=
 Apare des o confuzie între clasificarea cu etichete multiple și cea cu clase multiple. Diferența fundamentală este că în prima o instanță poate să aparțină mai multor clase, spre deosebire de cealaltă, în care o instanță este asignată unei singure clase. Totodată, clasificarea binară este un caz particular a clasificării cu etichete multiple atunci când $k=1$. Detectarea obiectelor face parte din acest tip de clasificare, unde, pentru o imagine, vom marca prezența mai multor obiecte (clase) și nu a unui singur element.
 
 \subsection{Învățare multi-instanță}
-În acest caz, o instanță nu mai este reprezentată de un singur vector de numere reale, ci de o mulțime de astfel de vectori. Fie $X=\{x_1, x_2,...,x_k\} \; k\in\mathbb{N^*} \; x_i\in\mathbb{R}^{p_i} \; p_i\in\mathbb{N^*}$ o instanță. O ipoteză $h$ determinată de un algoritm de învățare automată va clasifica întreaga mulțime $X$ și nu fiecare componentă $x_i$ independent.   \cite{multiInstance}\\
+În acest caz, o instanță nu mai este reprezentată de un singur vector de numere reale, ci de o mulțime de astfel de vectori. Fie $X=\{x_1, x_2,...,x_k\}, \ k\in\mathbb{N^*}, \ x_i\in\mathbb{R}^{p_i}, \ p_i\in\mathbb{N^*}$ o instanță. O ipoteză $h$ determinată de un algoritm de învățare automată va clasifica întreaga mulțime $X$ și nu fiecare componentă $x_i$ independent \cite{multiInstance}.   \\
 
 Problema abordată în această lucrare este una de învățare multi-instanță și de clasificare cu etichete multiple. Un restaurant este reprezentat de o mulțime de imagini și rezultatul este un vector $y$ cu 9 componente, fiecare marcând prezență sau absență celor 9 clase descrise în capitolul introductiv.\\
 
@@ -68,5 +68,5 @@ Problema abordată în această lucrare este una de învățare multi-instanță
 \end{tabular}
 
 \begin{center}
-\textit{O instanță formată din 12 fotografii și vectorul asociat}
+Figura 1: O instanță formată din 12 fotografii și vectorul asociat
 \end{center}
